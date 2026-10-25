@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141716">
+  <meta name="description" content="在浏览器中游玩口袋妖怪 漆黑的魅影 5.0EX＋BW。支持键盘、手柄、触屏和游戏存档。">
+  <title>漆黑的魅影 5.0EX＋BW · 浏览器游戏厅</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>.screen{aspect-ratio:3/2}h1{font-size:clamp(29px,4vw,45px);letter-spacing:2px}h1 span{font-size:12px;margin-left:14px;letter-spacing:2px}.game-meta{white-space:nowrap}.save-note{font-size:11px;line-height:1.9;color:var(--muted);margin:0 0 12px}.save-note:last-child{margin-bottom:0}.save-note strong{color:var(--text);font-weight:500}@media(max-width:760px){h1 span{display:block;margin:10px 0 0;font-size:11px}.controls{grid-template-columns:1fr}.controls-heading{grid-column:1}.handheld-note{grid-column:1}.player-heading>span:last-child{display:block}.save-note{font-size:11px}.screen-bottom{gap:8px}}</style>
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="游戏厅首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11h24v14H4zM9 7h14v4H9z" fill="currentColor"/><path d="M9 15v7m-3-3.5h6m9-2h3m-1.5 4h3" stroke="#141716" stroke-width="2"/></svg><span>一局童年<small>THE HANDHELD ARCADE</small></span></a>
+      <div class="header-actions"><span class="platform">GBA / POKÉMON</span><button id="share" class="share-button" type="button">复制游戏链接 <span aria-hidden="true">↗</span></button></div>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="game-title"><div><p class="eyebrow">HOENN IS CALLING · PRESS START</p><h1 id="game-title">漆黑的魅影<span>5.0 EX＋BW</span></h1><p class="tagline">回到丰缘，开启新的冒险。</p></div><div class="game-meta"><span>GBA</span><span>角色扮演</span><span>单人冒险</span></div></section>
+      <div class="play-layout">
+        <section class="arcade" aria-label="漆黑的魅影游戏区域">
+          <div class="screen-top"><span><i></i> NOW PLAYING <strong>漆黑的魅影</strong></span><span id="status" role="status">正在准备模拟器…</span></div>
+          <div class="screen"><div id="game"></div></div>
+          <div class="screen-bottom"><span><b>●</b> 点击游戏画面后操作</span><span>键盘 / 手柄 / 触屏</span></div>
+          <div class="start-hint"><span class="step">01</span><p>点击<strong>「开始冒险」</strong>加载游戏，标题画面按 <kbd>Enter</kbd>，用 <kbd>X</kbd> 确认。游戏文件约 <strong>32 MB</strong>，首次加载请稍等。</p></div>
+        </section>
+        <aside class="controls" aria-label="操作与存档说明">
+          <div class="controls-heading"><h2>准备好出发了吗？</h2><span>HOW TO PLAY</span></div>
+          <section class="player player-one"><div class="player-heading"><span class="player-number">GBA</span><h3>操作按键</h3><span>键盘控制</span></div><dl><div><dt>移动 / 选择</dt><dd><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></dd></div><div><dt>确认 / 对话 · A</dt><dd><kbd>X</kbd></dd></div><div><dt>返回 / 取消 · B</dt><dd><kbd>Z</kbd></dd></div><div><dt>开始 / 菜单</dt><dd><kbd>Enter</kbd></dd></div><div><dt>选择 · Select</dt><dd><kbd>Shift</kbd></dd></div><div><dt>L / R</dt><dd><kbd>Q</kbd><kbd>E</kbd></dd></div></dl></section>
+          <section class="player player-two"><div class="player-heading"><span class="player-number">SAVE</span><h3>把冒险存下来</h3></div><p class="save-note">使用<strong>游戏内菜单「保存」</strong>正常存档，进度保存在当前浏览器中。</p><p class="save-note">换设备或清理浏览器前，在画面底部工具栏<strong>导出游戏存档</strong>留好备份。也可以使用工具栏的保存状态 / 加载状态功能。</p><p class="player-note">不同设备的存档需要手动导入，不会自动同步。</p></section>
+          <div class="handheld-note"><span aria-hidden="true">✦</span><p>支持游戏手柄。手机使用屏幕按键，横屏体验更好。</p></div>
+        </aside>
+      </div>
+      <section class="quick-notes" aria-label="游玩提示"><div><span>01 / 随时出发</span><p>浏览器直接玩，无需安装</p></div><div><span>02 / 记得存档</span><p>游戏内保存，再安心离开</p></div><div><span>03 / 继续冒险</span><p>全屏、调音量、导入导出存档都在画面工具栏</p></div></section>
+    </main>
+    <footer><span>把快乐留在这一局。<span class="footer-dot">●</span> PLAY IN YOUR BROWSER</span><span>POWERED BY <a href="https://emulatorjs.org/" target="_blank" rel="noopener noreferrer">EmulatorJS</a><span class="footer-divider">/</span><a href="licenses.html">开源许可</a></span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

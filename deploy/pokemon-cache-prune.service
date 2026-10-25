@@ -1,0 +1,6 @@
+[Unit]
+Description=Enforce the 10 GB game cache limit
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/pokemon-dark-phantom/cache-rom.py --prune-only

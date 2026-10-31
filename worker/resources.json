@@ -1,0 +1,20 @@
+{
+  "/roms/pokemon-dark.gba": {
+    "key": "pokemon-dark-phantom/pokemon-dark.gba",
+    "file": "dist/roms/pokemon-dark.gba",
+    "source": "https://mnqcdn.anan.pro/simulator/gba/kdygqhdmy50expbw.zip",
+    "size": 33554188,
+    "sha256": "389363bb2c87b8f197f23d67c11e459cc9f46befec75dc57a9e6fdac898eccc2",
+    "contentType": "application/octet-stream",
+    "archive": true
+  },
+  "/runtime/libvba.wasm": {
+    "key": "runtime/libvba.wasm",
+    "file": "dist/runtime/libvba.wasm",
+    "source": "https://h5web.wufan88.com/libvba.wasm",
+    "size": 35299205,
+    "sha256": "14e6cf3c5139cd0e42eeebb1170ecf9ffc9e5f708a430490225bf307bcc41cb2",
+    "contentType": "application/wasm",
+    "archive": false
+  }
+}

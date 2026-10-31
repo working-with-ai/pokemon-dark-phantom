@@ -64,7 +64,7 @@ startButton.addEventListener('click', async () => {
     });
     if (!cached) {
       statusLabel.textContent = '正在加载游戏文件 · 约 32 MB';
-      const response = await fetch('https://opencode.accemarket.com/pokemon-dark-phantom/pokemon-dark.gba');
+      const response = await fetch('roms/pokemon-dark.gba');
       if (!response.ok) throw new Error(`游戏下载失败：${response.status}`);
       const contents = new Uint8Array(await response.arrayBuffer());
       await new Promise((resolve, reject) => {

@@ -61,8 +61,9 @@ function miniSection(section, data) {
 }
 
 function recommendPage(data) {
-  const popularIds = ['pokemon-dark-phantom', 'pixel-rally-21', 'thunder-fighter-12', 'space-invader-23', 'blood-arena-13', 'mech-defense-10'];
-  const popular = popularIds.map(id => data.gamesById.get(id)).filter(Boolean);
+  const popular = (data.popular || data.games.slice(0, 6).map(game => game.id))
+    .map(id => data.gamesById.get(id))
+    .filter(Boolean);
   return `<main class="home-main">
     ${bannerCarousel(data)}
     ${platformRow(data)}

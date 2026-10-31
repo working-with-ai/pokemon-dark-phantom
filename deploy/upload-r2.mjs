@@ -4,7 +4,16 @@ import { spawnSync } from 'node:child_process';
 import resources from '../worker/resources.json' with { type: 'json' };
 
 for (const resource of Object.values(resources)) {
-  const info = await stat(resource.file);
+  let info;
+  try {
+    info = await stat(resource.file);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log(JSON.stringify({ event: 'resource_local_missing', file: resource.file }));
+      continue;
+    }
+    throw error;
+  }
   const hash = createHash('sha256').update(await readFile(resource.file)).digest('hex');
   if (info.size !== resource.size || hash !== resource.sha256) {
     throw new Error(`Resource integrity check failed: ${resource.file}`);

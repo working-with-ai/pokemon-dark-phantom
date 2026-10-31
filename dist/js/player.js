@@ -1,20 +1,17 @@
 import { addPlayTime, addSaveSlot, formatClock, getSaveSlots, recordPlay } from './store.js';
+import { readSaveBytes, writeSaveBytes } from './saves.js';
+import { downloadCloudSave, getSyncCode, uploadCloudSave } from './cloud.js';
+import {
+  actionValues,
+  actionsFor,
+  assignGamepads,
+  loadBindings,
+  maskForPlayer,
+  playersFor
+} from './controls.js';
+import { ensureFsDirectory, prepareGameAssets, writeFilesToDb } from './resources.js';
 
-const KEY_MAP = {
-  ArrowUp: 1,
-  ArrowDown: 2,
-  ArrowLeft: 4,
-  ArrowRight: 8,
-  KeyX: 16,
-  KeyZ: 32,
-  KeyQ: 1024,
-  KeyE: 2048,
-  Enter: 1 << 22,
-  ShiftLeft: 1 << 23,
-  ShiftRight: 1 << 23
-};
-
-const SLOT_DB_NAME = 'ra:save-slots';
+const SLOT_STATE_NAME = 'selected.state';
 let activePlayer = null;
 
 if (!window.gameInfo) {
@@ -24,106 +21,30 @@ window.triggerReady = () => {
   if (activePlayer) activePlayer.handleReady();
 };
 
-function openRomDatabase(rootPath) {
-  return new Promise((resolve, reject) => {
-    const request = indexedDB.open(rootPath, 21);
-    request.onupgradeneeded = () => {
-      const database = request.result;
-      if (!database.objectStoreNames.contains('FILE_DATA')) {
-        const store = database.createObjectStore('FILE_DATA');
-        store.createIndex('timestamp', 'timestamp', { unique: false });
-      }
-    };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
-  });
-}
-
-async function readRomCache(rootPath, path) {
-  const database = await openRomDatabase(rootPath);
-  try {
-    return await new Promise((resolve, reject) => {
-      const request = database.transaction('FILE_DATA').objectStore('FILE_DATA').get(path);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-  } finally {
-    database.close();
-  }
-}
-
-async function writeRomCache(rootPath, path, contents) {
-  const database = await openRomDatabase(rootPath);
-  try {
-    await new Promise((resolve, reject) => {
-      const transaction = database.transaction('FILE_DATA', 'readwrite');
-      transaction.objectStore('FILE_DATA').put({ contents, mode: 33206, timestamp: new Date() }, path);
-      transaction.oncomplete = resolve;
-      transaction.onerror = () => reject(transaction.error);
-    });
-  } finally {
-    database.close();
-  }
-}
-
-function openSlotDatabase() {
-  return new Promise((resolve, reject) => {
-    const request = indexedDB.open(SLOT_DB_NAME, 1);
-    request.onupgradeneeded = () => {
-      if (!request.result.objectStoreNames.contains('states')) {
-        request.result.createObjectStore('states');
-      }
-    };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
-  });
-}
-
-async function writeSlotBytes(key, contents) {
-  const database = await openSlotDatabase();
-  try {
-    await new Promise((resolve, reject) => {
-      const transaction = database.transaction('states', 'readwrite');
-      transaction.objectStore('states').put(contents, key);
-      transaction.oncomplete = resolve;
-      transaction.onerror = () => reject(transaction.error);
-    });
-  } finally {
-    database.close();
-  }
-}
-
-async function readSlotBytes(key) {
-  const database = await openSlotDatabase();
-  try {
-    return await new Promise((resolve, reject) => {
-      const request = database.transaction('states').objectStore('states').get(key);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-  } finally {
-    database.close();
-  }
+function setVolumeSafe(emuSound, volume) {
+  try { emuSound?.setVolume(volume); } catch {}
 }
 
 export function createGamePlayer({
   game,
   slotId,
+  stageId,
+  cloudSlotId,
   canvas,
   touchPad,
   statusElement,
   onRunningChange,
-  onPauseChange
+  onPauseChange,
+  onCheatsReady,
+  onResourcesUnavailable
 }) {
   const core = game.core;
   if (!core) throw new Error('这款游戏还没有可用的模拟器内核');
   const rootPath = core.rootPath;
-  const romPath = core.romPath;
   const statePath = core.statePath;
-  const importPath = `${rootPath}/imported.state`;
-  const slotPath = `${rootPath}/selected.state`;
   const context = canvas.getContext('2d', { alpha: false });
   const controller = new AbortController();
+  const playerCount = playersFor(game.platform);
 
   let emulib = null;
   let emuSound = null;
@@ -133,19 +54,41 @@ export function createGamePlayer({
   let paused = false;
   let frameTime = 0;
   let frameId = 0;
-  let keyboardKeys = 0;
-  let touchKeys = 0;
-  let pressedKeys = new Set();
   let speed = 1;
   let volume = 0.5;
   let playTimer = 0;
   let sessionSeconds = 0;
   let flushedSeconds = 0;
   let destroyed = false;
+  let inputPaused = false;
+  let assets = null;
+  let bindings = loadBindings(game.platform);
+  let values = actionValues(game.platform);
+  let cheatEntries = [];
+  let selectedCheats = readSelectedCheats();
+  const pressedKeys = new Set();
+  const touchActions = Array.from({ length: playerCount }, () => new Set());
 
   const status = text => {
     if (!destroyed && statusElement) statusElement.textContent = text;
   };
+
+  function readSelectedCheats() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(`ra:cheats:${game.id}`) || '{}');
+      return stored && typeof stored === 'object' ? stored : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveSelectedCheats() {
+    try {
+      localStorage.setItem(`ra:cheats:${game.id}`, JSON.stringify(selectedCheats));
+    } catch {
+      /* private mode */
+    }
+  }
 
   const flushTime = () => {
     const pending = sessionSeconds - flushedSeconds;
@@ -168,6 +111,52 @@ export function createGamePlayer({
     }
   };
 
+  async function loadStateBytes(contents, label, path = `${rootPath}/${SLOT_STATE_NAME}`) {
+    if (destroyed || !emulib) return;
+    const bytes = contents instanceof Uint8Array ? contents : new Uint8Array(contents || []);
+    if (!bytes.length) throw new Error('存档为空');
+    ensureFsDirectory(emulib, path.slice(0, path.lastIndexOf('/')));
+    if (destroyed || !emulib) return;
+    emulib.FS.writeFile(path, bytes);
+    if (destroyed || !emulib) return;
+    emulib.ccall('emuLoadState', null, ['string'], [path]);
+    emulib._emuUpdate();
+    status(label);
+  }
+
+  async function loadPendingState() {
+    try {
+      if (stageId) {
+        const stage = assets?.stages?.find(item => String(item.id) === String(stageId));
+        if (!stage) throw new Error('预置关卡不存在');
+        await loadStateBytes(stage.state, `已进入${stage.label}`, `${rootPath}/stage.state`);
+      } else if (cloudSlotId) {
+        status('正在下载云端存档…');
+        const contents = await downloadCloudSave(game.id, cloudSlotId, getSyncCode(), controller.signal);
+        if (destroyed) return;
+        await loadStateBytes(contents, '已读取云端存档', `${rootPath}/cloud.state`);
+      } else if (slotId) {
+        const contents = await readSaveBytes(game.id, slotId);
+        if (destroyed) return;
+        if (!contents) throw new Error('所选存档不存在或已损坏');
+        await loadStateBytes(contents, '已读取所选存档');
+      }
+    } catch (error) {
+      if (destroyed) return;
+      console.warn('读档失败', error);
+      status(`读档失败：${error.message}`);
+    }
+  }
+
+  function applyCheats() {
+    if (!emulib || !running) return;
+    cheatEntries.forEach((entry, index) => {
+      const value = Number(selectedCheats[index] ?? entry.default ?? 0);
+      if (!value) return;
+      try { emulib._emuCheatEnable(index, value); } catch (error) { console.warn('金手指启用失败', error); }
+    });
+  }
+
   function handleReady() {
     if (destroyed || !emulib) return;
     canvas.width = emulib._emuGetVideoWidth();
@@ -185,26 +174,14 @@ export function createGamePlayer({
       sessionSeconds += 1;
       if (sessionSeconds - flushedSeconds >= 10) flushTime();
     }, 1000);
-    status('冒险进行中 · VBA');
+    status(`游戏进行中 · ${game.platform}${assets?.resourcesUnavailable ? ' · 金手指资源暂不可用' : ''}`);
     if (onRunningChange) onRunningChange(true);
     if (onPauseChange) onPauseChange(false);
+    applyCheats();
+    if (onCheatsReady) onCheatsReady(cheatEntries, selectedCheats);
     frameId = requestAnimationFrame(renderFrame);
-    if (slotId) {
-      loadSlot(slotId).catch(error => {
-        console.warn('所选存档读取失败', error);
-        status(`读档失败：${error.message}`);
-      });
-    }
-  }
-
-  async function loadSlot(id) {
-    const contents = await readSlotBytes(`${game.id}:${id}`);
-    if (destroyed || !emulib) return;
-    if (!contents || !contents.length) throw new Error('所选存档不存在或已损坏');
-    emulib.FS.writeFile(slotPath, new Uint8Array(contents));
-    emulib.ccall('emuLoadState', null, ['string'], [slotPath]);
-    emulib._emuUpdate();
-    status('已读取所选存档');
+    setTimeout(() => { if (!destroyed && running) applyCheats(); }, 300);
+    loadPendingState();
   }
 
   function renderFrame(time) {
@@ -213,22 +190,24 @@ export function createGamePlayer({
     if (paused) return;
     if (time - frameTime < 1000 / 65) return;
     frameTime = time;
-    let keys = keyboardKeys | touchKeys;
-    if (navigator.getGamepads) {
-      const pad = [...navigator.getGamepads()].find(Boolean);
-      if (pad) {
-        const mapping = { 0: 16, 1: 32, 4: 1024, 5: 2048, 8: 1 << 23, 9: 1 << 22, 12: 1, 13: 2, 14: 4, 15: 8 };
-        for (const [button, value] of Object.entries(mapping)) {
-          if (pad.buttons[button]?.pressed) keys |= value;
-        }
-        if (pad.axes[0] < -0.5) keys |= 4;
-        if (pad.axes[0] > 0.5) keys |= 8;
-        if (pad.axes[1] < -0.5) keys |= 1;
-        if (pad.axes[1] > 0.5) keys |= 2;
-      }
+    const pads = assignGamepads(navigator.getGamepads ? navigator.getGamepads() : [], {
+      platform: game.platform,
+      playerCount
+    });
+    for (let player = 0; player < playerCount; player += 1) {
+      const keys = maskForPlayer({
+        platform: game.platform,
+        bindings,
+        player: `P${player + 1}`,
+        heldKeys: pressedKeys,
+        touchActions: touchActions[player],
+        pad: pads[player] || null,
+        padIndex: player,
+        values
+      });
+      try { emulib._emuSetButton(player, keys); } catch (error) { console.warn('手柄输入失败', error); }
     }
     try {
-      emulib._emuSetButton(0, keys);
       emulib._emuUpdate();
       const pixels = new Uint16Array(emulib.HEAPU8.buffer, emulib._emuGetVideoData(), canvas.width * canvas.height);
       for (let i = 0; i < pixels.length; i += 1) {
@@ -246,27 +225,6 @@ export function createGamePlayer({
       if (playTimer) clearInterval(playTimer);
       flushTime();
       status('模拟器运行出错，请返回重试');
-    }
-  }
-
-  async function ensureRom() {
-    statusElement && (statusElement.textContent = '正在检查本地游戏缓存…');
-    let cached = null;
-    try {
-      cached = await readRomCache(rootPath, romPath);
-    } catch {
-      cached = null;
-    }
-    if (cached && cached.contents && cached.contents.length) return;
-    const size = core.size ? ` · 约 ${Math.round(core.size / 1024 / 1024)} MB` : '';
-    status(`正在加载游戏文件${size}`);
-    const response = await fetch(new URL(core.romUrl, document.baseURI));
-    if (!response.ok) throw new Error(`游戏下载失败：${response.status}`);
-    const contents = new Uint8Array(await response.arrayBuffer());
-    try {
-      await writeRomCache(rootPath, romPath, contents);
-    } catch (error) {
-      console.warn('游戏缓存写入失败，将继续本次运行', error);
     }
   }
 
@@ -290,7 +248,6 @@ export function createGamePlayer({
         locateFile: name => new URL(`runtime/${name}`, document.baseURI).href,
         onAbort: () => status('模拟器加载失败，请刷新重试')
       });
-      // 过期的加载只清理自己的音频，不能覆盖新实例写入的全局对象
       if (destroyed) {
         stopAudio();
         return;
@@ -300,22 +257,44 @@ export function createGamePlayer({
       window.emuSound = emuSound;
       if (emuSound) {
         emuSound.emscriptenModule = emulib;
-        emuSound.setVolume(volume);
+        setVolumeSafe(emuSound, volume);
       }
-      await ensureRom();
+      assets = await prepareGameAssets(game, status);
       if (destroyed) {
         stopAudio();
         return;
       }
-      status('正在启动 VBA 内核…');
-      emulib.ccall('emuSetJson', null, ['string'], [JSON.stringify({
-        gameType: 33,
-        gameMode: 'VBA',
-        romPath,
-        rootPath,
-        startMode: 0,
-        gameID: 'pokemon-dark-phantom'
-      })]);
+      if (assets.resourcesUnavailable && onResourcesUnavailable) {
+        try { onResourcesUnavailable(); } catch {}
+      }
+      values = actionValues(game.platform, assets.padSetting);
+      bindings = loadBindings(game.platform);
+      cheatEntries = assets.cheats || [];
+      selectedCheats = readSelectedCheats();
+      window.gameInfo = window.gameInfo || {};
+      window.gameInfo.goldenFingerFiles = (assets.iniText || '').replace(/^\uFEFF/, '');
+      try {
+        await writeFilesToDb(rootPath, assets.romFiles);
+      } catch (error) {
+        throw new Error(`写入游戏缓存失败：${error.message}`);
+      }
+      if (destroyed) {
+        stopAudio();
+        return;
+      }
+      status(`正在启动 ${core.gameMode} 内核…`);
+      try {
+        emulib.ccall('emuSetJson', null, ['string'], [JSON.stringify({
+          gameType: core.gameType,
+          gameMode: core.gameMode,
+          romPath: core.romPath,
+          rootPath: core.rootPath,
+          startMode: 0,
+          gameID: game.id
+        })]);
+      } catch (error) {
+        throw new Error(`emuSetJson 失败：${error.message}`);
+      }
       emulib._emuFast(speed);
     } catch (error) {
       starting = false;
@@ -330,8 +309,8 @@ export function createGamePlayer({
     if (!running || !emulib) return paused;
     paused = !paused;
     try { emulib._emuPause(paused ? 1 : 0); } catch {}
-    if (emuSound) emuSound.setVolume(paused ? 0 : volume);
-    status(paused ? '冒险已暂停' : '冒险进行中 · VBA');
+    if (emuSound) setVolumeSafe(emuSound, paused ? 0 : volume);
+    status(paused ? '游戏已暂停' : `游戏进行中 · ${game.platform}`);
     if (onPauseChange) onPauseChange(paused);
     return paused;
   }
@@ -344,7 +323,7 @@ export function createGamePlayer({
 
   function setVolume(next) {
     volume = Math.min(1, Math.max(0, Number(next)));
-    if (emuSound && !paused) emuSound.setVolume(volume);
+    if (emuSound && !paused) setVolumeSafe(emuSound, volume);
   }
 
   function captureState() {
@@ -366,13 +345,20 @@ export function createGamePlayer({
       createdAt,
       seconds: sessionSeconds
     };
-    try {
-      await writeSlotBytes(`${game.id}:${slot.id}`, contents);
-      addSaveSlot(slot);
-    } catch (error) {
-      console.warn('即时存档写入失败', error);
+    await writeSaveBytes(game.id, slot.id, contents);
+    addSaveSlot(slot);
+    const code = getSyncCode();
+    if (code) {
+      try {
+        await uploadCloudSave(slot, contents, code);
+        status('即时存档已保存并同步到云端');
+      } catch (error) {
+        console.warn('云同步失败', error);
+        status('即时存档已保存到本地（云同步失败）');
+      }
+    } else {
+      status('即时存档已保存到当前浏览器');
     }
-    status('即时存档已保存到当前浏览器');
     return slot;
   }
 
@@ -386,12 +372,10 @@ export function createGamePlayer({
     }
     const [latest] = getSaveSlots(game.id);
     if (!latest) throw new Error('还没有即时存档，请先点击「存档」');
-    const contents = await readSlotBytes(`${game.id}:${latest.id}`);
-    if (!contents || !contents.length) throw new Error('存档数据已损坏');
-    emulib.FS.writeFile(statePath, new Uint8Array(contents));
-    emulib.ccall('emuLoadState', null, ['string'], [statePath]);
-    emulib._emuUpdate();
-    status('已读取上次保存的即时存档');
+    const contents = await readSaveBytes(game.id, latest.id);
+    if (destroyed) return;
+    if (!contents) throw new Error('存档数据已损坏');
+    await loadStateBytes(contents, '已读取上次保存的即时存档', statePath);
   }
 
   async function exportState() {
@@ -399,7 +383,7 @@ export function createGamePlayer({
     const url = URL.createObjectURL(new Blob([contents]));
     const link = document.createElement('a');
     link.href = url;
-    link.download = `${(game.shortName || game.name).replace(/\s+/g, '-')}-VBA.state`;
+    link.download = `${(game.shortName || game.name).replace(/\s+/g, '-')}-${core.gameMode}.state`;
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     status(`即时存档已导出 · ${Math.ceil(contents.length / 1024)} KB`);
@@ -408,47 +392,84 @@ export function createGamePlayer({
   async function importState(file) {
     if (!file || !emulib) return;
     try {
-      emulib.FS.writeFile(importPath, new Uint8Array(await file.arrayBuffer()));
-      emulib.ccall('emuLoadState', null, ['string'], [importPath]);
-      emulib._emuUpdate();
-      status('已导入 VBA 即时存档');
+      await loadStateBytes(await file.arrayBuffer(), '已导入即时存档', `${rootPath}/imported.state`);
     } catch (error) {
       status(`导入失败：${error.message}`);
     }
+  }
+
+  function isBoundKey(code) {
+    for (const player of Object.values(bindings)) {
+      for (const binding of Object.values(player)) {
+        if (binding?.key === code) return true;
+      }
+    }
+    return false;
   }
 
   function bindControls() {
     const signal = controller.signal;
     for (const type of ['keydown', 'keyup']) {
       window.addEventListener(type, event => {
-        if (!running || !KEY_MAP[event.code] || /INPUT|SELECT|TEXTAREA/.test(event.target.tagName)) return;
+        if (!running || inputPaused || /INPUT|SELECT|TEXTAREA/.test(event.target.tagName)) return;
+        if (!isBoundKey(event.code) && !pressedKeys.has(event.code)) return;
         event.preventDefault();
         if (type === 'keydown') pressedKeys.add(event.code);
         else pressedKeys.delete(event.code);
-        keyboardKeys = [...pressedKeys].reduce((keys, code) => keys | KEY_MAP[code], 0);
       }, { signal });
     }
     window.addEventListener('blur', () => {
       pressedKeys.clear();
-      keyboardKeys = 0;
-      touchKeys = 0;
+      touchActions.forEach(set => set.clear());
     }, { signal });
     if (!touchPad) return;
-    for (const button of touchPad.querySelectorAll('[data-key]')) {
+    for (const button of touchPad.querySelectorAll('[data-action]')) {
+      const action = button.dataset.action;
+      const player = Math.max(0, Number(button.dataset.player) || 0);
       button.addEventListener('pointerdown', event => {
-        if (!running) return;
+        if (!running || !touchActions[player]) return;
         event.preventDefault();
         button.setPointerCapture(event.pointerId);
-        touchKeys |= Number(button.dataset.key);
+        touchActions[player].add(action);
         button.classList.add('is-pressed');
       }, { signal });
       for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) {
         button.addEventListener(type, () => {
-          touchKeys &= ~Number(button.dataset.key);
+          touchActions[player]?.delete(action);
           button.classList.remove('is-pressed');
         }, { signal });
       }
     }
+  }
+
+  function setInputPaused(value) {
+    inputPaused = Boolean(value);
+    pressedKeys.clear();
+  }
+
+  function reloadBindings() {
+    bindings = loadBindings(game.platform);
+    values = actionValues(game.platform, assets?.padSetting);
+    pressedKeys.clear();
+  }
+
+  function setCheat(index, value) {
+    selectedCheats[index] = Number(value) || 0;
+    saveSelectedCheats();
+    if (emulib && running) {
+      try { emulib._emuCheatEnable(index, Number(value) || 0); } catch (error) { console.warn('金手指切换失败', error); }
+    }
+    return selectedCheats[index];
+  }
+
+  function resetCheats() {
+    selectedCheats = {};
+    saveSelectedCheats();
+    cheatEntries.forEach((entry, index) => {
+      if (emulib && running) {
+        try { emulib._emuCheatEnable(index, 0); } catch {}
+      }
+    });
   }
 
   function destroy() {
@@ -464,8 +485,7 @@ export function createGamePlayer({
     }
     stopAudio();
     pressedKeys.clear();
-    keyboardKeys = 0;
-    touchKeys = 0;
+    touchActions.forEach(set => set.clear());
     if (activePlayer === api) activePlayer = null;
     if (document.fullscreenElement && typeof document.exitFullscreen === 'function') {
       document.exitFullscreen().catch(() => {});
@@ -484,6 +504,14 @@ export function createGamePlayer({
     loadState,
     exportState,
     importState,
+    getCheats: () => ({ entries: cheatEntries, selected: selectedCheats }),
+    setCheat,
+    resetCheats,
+    reloadBindings,
+    setInputPaused,
+    getBindings: () => bindings,
+    getActions: () => actionsFor(game.platform),
+    getPlayers: () => playerCount,
     isRunning: () => running,
     isPaused: () => paused
   };

@@ -16,5 +16,23 @@
     "sha256": "14e6cf3c5139cd0e42eeebb1170ecf9ffc9e5f708a430490225bf307bcc41cb2",
     "contentType": "application/wasm",
     "archive": false
+  },
+  "/runtime/libnes.wasm": {
+    "key": "runtime/libnes.wasm",
+    "file": "dist/runtime/libnes.wasm",
+    "source": "https://h5web.wufan88.com/libnes.wasm",
+    "size": 5963209,
+    "sha256": "24dd4136844906a61c8c8fef8e678295a97e3b4816e71a473bdaf2523bb0ed74",
+    "contentType": "application/wasm",
+    "archive": false
+  },
+  "/runtime/libfba_v2.wasm": {
+    "key": "runtime/libfba_v2.wasm",
+    "file": "dist/runtime/libfba_v2.wasm",
+    "source": "https://h5web.wufan88.com/libfba_v2.wasm",
+    "size": 45770570,
+    "sha256": "832105ac7e720a0351ded60eccfc398a7a4c12728691bf48a8f34f3621eae8ce",
+    "contentType": "application/wasm",
+    "archive": false
   }
 }

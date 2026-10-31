@@ -12,7 +12,7 @@
       "kicker": "RETRO ARCADE",
       "theme": "sun",
       "art": "pad",
-      "gameId": "pokemon-dark-phantom"
+      "gameId": "452377455"
     },
     {
       "id": "pokemon",
@@ -30,7 +30,7 @@
       "kicker": "ARCADE NIGHT",
       "theme": "night",
       "art": "ship",
-      "gameId": "space-invader-23"
+      "gameId": "3913852899"
     },
     {
       "id": "challenge",
@@ -39,7 +39,7 @@
       "kicker": "SPEED RUN",
       "theme": "mint",
       "art": "flag",
-      "gameId": "pixel-hero-01"
+      "gameId": "1663697867"
     }
   ],
   "platforms": [
@@ -66,519 +66,4939 @@
     {
       "id": "pocket",
       "name": "口袋热门改版",
-      "subtitle": "经典 IP 的全新冒险",
+      "subtitle": "经典掌机冒险，一次玩个够",
       "gameIds": [
         "pokemon-dark-phantom",
-        "pixel-hero-01",
-        "iron-squad-07",
-        "snow-peak-11",
-        "dungeon-quest-14",
-        "magic-academy-16",
-        "deep-sea-20",
-        "block-knight-22"
+        "1241117653",
+        "1679647640",
+        "470319217",
+        "3695813938",
+        "911033564",
+        "4137509635",
+        "395302752",
+        "2581388577",
+        "4068708485",
+        "279316473",
+        "2178284194",
+        "718639626",
+        "4032481919"
       ]
     },
     {
-      "id": "boring",
-      "name": "打发无聊时间",
-      "subtitle": "随开随玩，一局就上头",
+      "id": "sanguo",
+      "name": "三国群英传",
+      "subtitle": "三国题材的街机与红白机经典",
       "gameIds": [
-        "star-patrol-02",
-        "neon-racer-03",
-        "jungle-run-04",
-        "bubble-hunter-06",
-        "gem-puzzle-08",
-        "pinball-land-18",
-        "wild-gunner-19",
-        "pixel-rally-21"
+        "1736527658",
+        "210765038",
+        "109358328",
+        "1883371097",
+        "2740590570",
+        "3562875477",
+        "2465501517",
+        "2254081428",
+        "3868826732",
+        "1398464272",
+        "3342769352",
+        "2443095290",
+        "174465372",
+        "978217417",
+        "3529667603",
+        "2895205432",
+        "474504294"
+      ]
+    },
+    {
+      "id": "dino",
+      "name": "恐龙快打合集",
+      "subtitle": "街机厅里最热闹的那台机器",
+      "gameIds": [
+        "3913852899",
+        "595841479",
+        "2793650449",
+        "108333622",
+        "3592176172",
+        "3281883942",
+        "364512461"
       ]
     },
     {
       "id": "classic",
       "name": "经典闯关",
-      "subtitle": "熟悉的像素，新的挑战",
+      "subtitle": "魂斗罗、玛丽与童年搭子",
       "gameIds": [
-        "midnight-drift-05",
-        "street-hoop-09",
-        "mech-defense-10",
-        "thunder-fighter-12",
-        "blood-arena-13",
-        "turbo-drift-15",
-        "boxing-king-17",
-        "forest-story-24"
+        "452377455",
+        "1663697867",
+        "2458975624",
+        "1521405869",
+        "639324639",
+        "2785620260",
+        "884133498",
+        "3371337950",
+        "3057906787",
+        "865949429",
+        "1072158899",
+        "3483323591",
+        "3242509557",
+        "654109170",
+        "613232351",
+        "4266647288",
+        "3599007110",
+        "3250411041",
+        "2941830434",
+        "2800650505",
+        "953805076",
+        "948575402",
+        "485480531",
+        "4153024296",
+        "4031903276",
+        "376019615"
+      ]
+    },
+    {
+      "id": "relax",
+      "name": "打发无聊时间",
+      "subtitle": "随开随玩的小品与益智合集",
+      "gameIds": [
+        "2021858647",
+        "3521755551",
+        "1056989342",
+        "563162603",
+        "338506589",
+        "2440054051",
+        "9895614",
+        "1226998290",
+        "3901410772",
+        "3611889235",
+        "3404217044",
+        "3201329746",
+        "1042657924",
+        "660270848",
+        "3770464094"
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "街机厅精选",
+      "subtitle": "投币、开打、再来一局",
+      "gameIds": [
+        "3913852899",
+        "595841479",
+        "1736527658",
+        "530554297",
+        "122078927",
+        "210765038",
+        "2458975624",
+        "2793650449",
+        "400160155",
+        "1883371097",
+        "108333622",
+        "3562875477",
+        "3186559554",
+        "338506589",
+        "2465501517",
+        "2254081428",
+        "3868826732",
+        "1999385152",
+        "1398464272",
+        "1286348009",
+        "1001073791",
+        "721834261",
+        "3592176172",
+        "4168643380",
+        "3281883942",
+        "2398874910",
+        "9895614",
+        "3342769352",
+        "2443095290",
+        "161304317",
+        "1412897545",
+        "4266647288",
+        "4148056763",
+        "3901410772",
+        "364512461",
+        "3611889235",
+        "3529667603",
+        "3404217044",
+        "2895205432",
+        "1835287026",
+        "489783855"
       ]
     }
   ],
   "discover": [
-    "pixel-rally-21",
-    "blood-arena-13",
-    "street-hoop-09",
-    "space-invader-23",
-    "magic-academy-16",
-    "neon-racer-03",
+    "452377455",
+    "3913852899",
+    "1736527658",
+    "1663697867",
     "pokemon-dark-phantom",
-    "boxing-king-17"
+    "1241117653",
+    "530554297",
+    "122078927",
+    "3521755551",
+    "4168643380"
+  ],
+  "popular": [
+    "452377455",
+    "pokemon-dark-phantom",
+    "3913852899",
+    "595841479",
+    "1736527658",
+    "1663697867"
   ],
   "games": [
     {
-      "id": "pokemon-dark-phantom",
-      "name": "口袋妖怪 漆黑的魅影 5.0EX＋BW",
-      "shortName": "漆黑的魅影",
-      "platform": "GBA",
-      "tags": ["GBA", "口袋妖怪", "角色扮演"],
-      "players": 27435,
-      "score": 9.6,
-      "releaseDate": "2026-10-29",
-      "desc": "回到丰缘地区，开启一段熟悉又陌生的冒险。全新剧情、全新地图与更完整的伙伴阵容，在浏览器里重温掌机时代最耐玩的角色扮演体验。支持即时存档，随时接着上次的旅程继续出发。",
-      "cover": null,
+      "id": "452377455",
+      "r2Id": "452377455",
+      "rank": 1,
+      "name": "魂斗罗",
+      "shortName": "魂斗罗",
+      "platform": "FC",
+      "package": "hdl1",
+      "tags": [
+        "FC",
+        "射击",
+        "怀旧"
+      ],
+      "players": 41837,
+      "score": 9.4,
+      "releaseDate": "2026-10-31",
+      "desc": "《魂斗罗》是 FC 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/452377455/cover.png",
+      "coverExt": "png",
       "coverTone": 2,
       "screenshots": [
-        { "label": "冒险开始", "tone": "forest" },
-        { "label": "道馆挑战", "tone": "city" },
-        { "label": "全新剧情", "tone": "dungeon" }
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
       ],
       "playable": true,
+      "hasResources": true,
       "core": {
-        "gameType": 33,
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/hdl1",
+        "romPath": "/hdl1/hdl1.zip",
+        "statePath": "/hdl1/adventure.state",
+        "romUrl": "games/452377455/rom.zip",
+        "resourcesUrl": "games/452377455/resources.zip",
+        "size": 126770
+      }
+    },
+    {
+      "id": "pokemon-dark-phantom",
+      "r2Id": "1713536658",
+      "rank": 2,
+      "name": "口袋妖怪 漆黑的魅影5.0EX＋BW",
+      "shortName": "口袋妖怪 漆黑的魅影5.0EX＋BW",
+      "platform": "GBA",
+      "package": "kdygqhdmy50expbw",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 41432,
+      "score": 8.9,
+      "releaseDate": "2026-10-31",
+      "desc": "回到丰缘地区，开启一段熟悉又陌生的冒险。全新剧情、全新地图与更完整的伙伴阵容，在浏览器里重温掌机时代最耐玩的角色扮演体验。支持即时存档、金手指与跨设备云存档。",
+      "cover": "games/pokemon-dark-phantom/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
         "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
         "rootPath": "/pokemon-dark-phantom-vba",
         "romPath": "/pokemon-dark-phantom-vba/pokemon-dark.gba",
         "statePath": "/pokemon-dark-phantom-vba/adventure.state",
         "romUrl": "roms/pokemon-dark.gba",
-        "size": 33554188
+        "resourcesUrl": "games/pokemon-dark-phantom/resources.zip",
+        "size": 33554188,
+        "legacy": true
       }
     },
     {
-      "id": "pixel-hero-01",
-      "name": "像素勇者 01",
-      "platform": "GBA",
-      "tags": ["GBA", "动作", "冒险"],
-      "players": 7420,
-      "score": 8.8,
-      "releaseDate": "2026-10-29",
-      "desc": "拿起勇者之剑，穿过森林与洞窟，把被夺走的宝石一颗颗找回来。轻快的像素动作冒险，适合随时来上一局。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "勇者出发", "tone": "forest" },
-        { "label": "洞窟深处", "tone": "dungeon" },
-        { "label": "天空之城", "tone": "sky" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "star-patrol-02",
-      "name": "星际巡逻 02",
-      "platform": "FC",
-      "tags": ["FC", "射击", "街机"],
-      "players": 5,
-      "score": 8.2,
-      "releaseDate": "2026-10-29",
-      "desc": "驾驶巡逻舰穿过陨石带，在密集的弹幕中守住最后一颗能源核心。复古纵版射击，节奏紧凑。",
-      "cover": null,
-      "coverTone": 3,
-      "screenshots": [
-        { "label": "深空巡航", "tone": "space" },
-        { "label": "陨石带", "tone": "sky" },
-        { "label": "母舰决战", "tone": "neon" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "neon-racer-03",
-      "name": "霓虹赛车 03",
+      "id": "3913852899",
+      "r2Id": "3913852899",
+      "rank": 3,
+      "name": "恐龙快打",
+      "shortName": "恐龙快打",
       "platform": "街机",
-      "tags": ["街机", "竞速", "一键漂移"],
-      "players": 1980,
-      "score": 8.9,
-      "releaseDate": "2026-10-29",
-      "desc": "夜色、霓虹与引擎声。一键漂移穿过城市高架，在倒计时结束前冲过终点线。",
-      "cover": null,
+      "package": "dino",
+      "tags": [
+        "街机",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 41074,
+      "score": 8.5,
+      "releaseDate": "2026-10-31",
+      "desc": "《恐龙快打》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3913852899/cover.png",
+      "coverExt": "png",
       "coverTone": 4,
       "screenshots": [
-        { "label": "午夜起跑", "tone": "neon" },
-        { "label": "高架追逐", "tone": "city" },
-        { "label": "终点冲刺", "tone": "sunset" }
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dino",
+        "romPath": "/dino/dino.zip",
+        "statePath": "/dino/adventure.state",
+        "romUrl": "games/3913852899/rom.zip",
+        "resourcesUrl": "games/3913852899/resources.zip",
+        "size": 3962228
+      }
     },
     {
-      "id": "jungle-run-04",
-      "name": "丛林探险 04",
+      "id": "595841479",
+      "r2Id": "595841479",
+      "rank": 4,
+      "name": "恐龙快打 手枪无限子弹版",
+      "shortName": "恐龙快打 手枪无限子弹版",
+      "platform": "街机",
+      "package": "dinoeh",
+      "tags": [
+        "街机",
+        "格斗",
+        "改版"
+      ],
+      "players": 40576,
+      "score": 9.5,
+      "releaseDate": "2026-10-31",
+      "desc": "《恐龙快打 手枪无限子弹版》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/595841479/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinoeh",
+        "romPath": "/dinoeh/dinoeh.zip",
+        "statePath": "/dinoeh/adventure.state",
+        "romUrl": "games/595841479/rom.zip",
+        "resourcesUrl": "games/595841479/resources.zip",
+        "size": 4115770
+      }
+    },
+    {
+      "id": "1736527658",
+      "r2Id": "1736527658",
+      "rank": 5,
+      "name": "三国战纪 风云再起",
+      "shortName": "三国战纪 风云再起",
+      "platform": "街机",
+      "package": "kovsh",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 40340,
+      "score": 9.1,
+      "releaseDate": "2026-10-31",
+      "desc": "《三国战纪 风云再起》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1736527658/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovsh",
+        "romPath": "/kovsh/kovsh.zip",
+        "statePath": "/kovsh/adventure.state",
+        "romUrl": "games/1736527658/rom.zip",
+        "resourcesUrl": "games/1736527658/resources.zip",
+        "size": 21158101
+      }
+    },
+    {
+      "id": "1663697867",
+      "r2Id": "1663697867",
+      "rank": 6,
+      "name": "超级玛丽",
+      "shortName": "超级玛丽",
+      "platform": "FC",
+      "package": "mla",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 39783,
+      "score": 8.6,
+      "releaseDate": "2026-10-31",
+      "desc": "《超级玛丽》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1663697867/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/mla",
+        "romPath": "/mla/mla.zip",
+        "statePath": "/mla/adventure.state",
+        "romUrl": "games/1663697867/rom.zip",
+        "resourcesUrl": "games/1663697867/resources.zip",
+        "size": 31496
+      }
+    },
+    {
+      "id": "530554297",
+      "r2Id": "530554297",
+      "rank": 7,
+      "name": "街头霸王2 四大天王",
+      "shortName": "街头霸王2 四大天王",
+      "platform": "街机",
+      "package": "sf2ce",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 39482,
+      "score": 9.6,
+      "releaseDate": "2026-10-31",
+      "desc": "《街头霸王2 四大天王》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/530554297/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/sf2ce",
+        "romPath": "/sf2ce/sf2ce.zip",
+        "statePath": "/sf2ce/adventure.state",
+        "romUrl": "games/530554297/rom.zip",
+        "resourcesUrl": "games/530554297/resources.zip",
+        "size": 3486396
+      }
+    },
+    {
+      "id": "1241117653",
+      "r2Id": "1241117653",
+      "rank": 8,
+      "name": "口袋妖怪 究极绿宝石5.5",
+      "shortName": "口袋妖怪 究极绿宝石5.5",
       "platform": "GBA",
-      "tags": ["GBA", "冒险", "收集"],
-      "players": 41,
+      "package": "jjlbs55",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 39079,
+      "score": 9.2,
+      "releaseDate": "2026-10-31",
+      "desc": "《口袋妖怪 究极绿宝石5.5》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1241117653/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/jjlbs55",
+        "romPath": "/jjlbs55/jjlbs55.zip",
+        "statePath": "/jjlbs55/adventure.state",
+        "romUrl": "games/1241117653/rom.zip",
+        "resourcesUrl": "games/1241117653/resources.zip",
+        "size": 11670448
+      }
+    },
+    {
+      "id": "2021858647",
+      "r2Id": "2021858647",
+      "rank": 9,
+      "name": "吞食天地2 中文版",
+      "shortName": "吞食天地2 中文版",
+      "platform": "FC",
+      "package": "tstd2",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 38769,
+      "score": 8.8,
+      "releaseDate": "2026-10-29",
+      "desc": "《吞食天地2 中文版》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2021858647/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/tstd2",
+        "romPath": "/tstd2/tstd2.zip",
+        "statePath": "/tstd2/adventure.state",
+        "romUrl": "games/2021858647/rom.zip",
+        "resourcesUrl": "games/2021858647/resources.zip",
+        "size": 616749
+      }
+    },
+    {
+      "id": "122078927",
+      "r2Id": "122078927",
+      "rank": 10,
+      "name": "西游释厄传",
+      "shortName": "西游释厄传",
+      "platform": "街机",
+      "package": "orlegend",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 38324,
+      "score": 9.7,
+      "releaseDate": "2026-10-29",
+      "desc": "《西游释厄传》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/122078927/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/orlegend",
+        "romPath": "/orlegend/orlegend.zip",
+        "statePath": "/orlegend/adventure.state",
+        "romUrl": "games/122078927/rom.zip",
+        "resourcesUrl": "games/122078927/resources.zip",
+        "size": 16253750
+      }
+    },
+    {
+      "id": "210765038",
+      "r2Id": "210765038",
+      "rank": 11,
+      "name": "三国志 三剑圣",
+      "shortName": "三国志 三剑圣",
+      "platform": "街机",
+      "package": "wof3js",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 38022,
+      "score": 9.3,
+      "releaseDate": "2026-10-29",
+      "desc": "《三国志 三剑圣》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/210765038/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/wof3js",
+        "romPath": "/wof3js/wof3js.zip",
+        "statePath": "/wof3js/adventure.state",
+        "romUrl": "games/210765038/rom.zip",
+        "resourcesUrl": "games/210765038/resources.zip",
+        "size": 2857326
+      }
+    },
+    {
+      "id": "109358328",
+      "r2Id": "109358328",
+      "rank": 12,
+      "name": "三国志2 霸王的大陆 纯净版0.96",
+      "shortName": "三国志2 霸王的大陆 纯净版0.96",
+      "platform": "FC",
+      "package": "sgz2bwddl",
+      "tags": [
+        "FC",
+        "策略",
+        "改版"
+      ],
+      "players": 37753,
+      "score": 8.9,
+      "releaseDate": "2026-10-29",
+      "desc": "《三国志2 霸王的大陆 纯净版0.96》是 FC 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/109358328/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/sgz2bwddl",
+        "romPath": "/sgz2bwddl/sgz2bwddl.zip",
+        "statePath": "/sgz2bwddl/adventure.state",
+        "romUrl": "games/109358328/rom.zip",
+        "resourcesUrl": "games/109358328/resources.zip",
+        "size": 254280
+      }
+    },
+    {
+      "id": "2458975624",
+      "r2Id": "2458975624",
+      "rank": 13,
+      "name": "格斗双截龙",
+      "shortName": "格斗双截龙",
+      "platform": "街机",
+      "package": "doubledr",
+      "tags": [
+        "街机",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 37382,
+      "score": 8.5,
+      "releaseDate": "2026-10-29",
+      "desc": "《格斗双截龙》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2458975624/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/doubledr",
+        "romPath": "/doubledr/doubledr.zip",
+        "statePath": "/doubledr/adventure.state",
+        "romUrl": "games/2458975624/rom.zip",
+        "resourcesUrl": "games/2458975624/resources.zip",
+        "size": 9595136
+      }
+    },
+    {
+      "id": "3521755551",
+      "r2Id": "3521755551",
+      "rank": 14,
+      "name": "雪人兄弟",
+      "shortName": "雪人兄弟",
+      "platform": "FC",
+      "package": "xrxd",
+      "tags": [
+        "FC",
+        "经典",
+        "怀旧"
+      ],
+      "players": 36947,
+      "score": 9.4,
+      "releaseDate": "2026-10-29",
+      "desc": "《雪人兄弟》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3521755551/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/xrxd",
+        "romPath": "/xrxd/xrxd.zip",
+        "statePath": "/xrxd/adventure.state",
+        "romUrl": "games/3521755551/rom.zip",
+        "resourcesUrl": "games/3521755551/resources.zip",
+        "size": 90719
+      }
+    },
+    {
+      "id": "2793650449",
+      "r2Id": "2793650449",
+      "rank": 15,
+      "name": "恐龙快打 天王版",
+      "shortName": "恐龙快打 天王版",
+      "platform": "街机",
+      "package": "dinowtw",
+      "tags": [
+        "街机",
+        "格斗",
+        "改版"
+      ],
+      "players": 36560,
+      "score": 9,
+      "releaseDate": "2026-10-29",
+      "desc": "《恐龙快打 天王版》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2793650449/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinowtw",
+        "romPath": "/dinowtw/dinowtw.zip",
+        "statePath": "/dinowtw/adventure.state",
+        "romUrl": "games/2793650449/rom.zip",
+        "resourcesUrl": "games/2793650449/resources.zip",
+        "size": 4721441
+      }
+    },
+    {
+      "id": "400160155",
+      "r2Id": "400160155",
+      "rank": 16,
+      "name": "西游释厄传 群魔乱舞大招简化无限气",
+      "shortName": "西游释厄传 群魔乱舞大招简化无限气",
+      "platform": "街机",
+      "package": "oldsp",
+      "tags": [
+        "街机",
+        "经典",
+        "改版"
+      ],
+      "players": 36212,
+      "score": 8.6,
+      "releaseDate": "2026-10-29",
+      "desc": "《西游释厄传 群魔乱舞大招简化无限气》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/400160155/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/oldsp",
+        "romPath": "/oldsp/oldsp.zip",
+        "statePath": "/oldsp/adventure.state",
+        "romUrl": "games/400160155/rom.zip",
+        "resourcesUrl": "games/400160155/resources.zip",
+        "size": 23939212
+      }
+    },
+    {
+      "id": "1679647640",
+      "r2Id": "1679647640",
+      "rank": 17,
+      "name": "口袋妖怪 水银FC",
+      "shortName": "口袋妖怪 水银FC",
+      "platform": "GBA",
+      "package": "kdygsyfc",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 35785,
+      "score": 9.6,
+      "releaseDate": "2026-10-27",
+      "desc": "《口袋妖怪 水银FC》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1679647640/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygsyfc",
+        "romPath": "/kdygsyfc/kdygsyfc.zip",
+        "statePath": "/kdygsyfc/adventure.state",
+        "romUrl": "games/1679647640/rom.zip",
+        "resourcesUrl": "games/1679647640/resources.zip",
+        "size": 16529821
+      }
+    },
+    {
+      "id": "1883371097",
+      "r2Id": "1883371097",
+      "rank": 18,
+      "name": "三国志2",
+      "shortName": "三国志2",
+      "platform": "街机",
+      "package": "wofa",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 35418,
+      "score": 9.1,
+      "releaseDate": "2026-10-27",
+      "desc": "《三国志2》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1883371097/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/wofa",
+        "romPath": "/wofa/wofa.zip",
+        "statePath": "/wofa/adventure.state",
+        "romUrl": "games/1883371097/rom.zip",
+        "resourcesUrl": "games/1883371097/resources.zip",
+        "size": 3783192
+      }
+    },
+    {
+      "id": "1521405869",
+      "r2Id": "1521405869",
+      "rank": 19,
+      "name": "忍者神龟格斗（激龟快打）",
+      "shortName": "忍者神龟格斗（激龟快打）",
+      "platform": "FC",
+      "package": "rzsggd",
+      "tags": [
+        "FC",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 35045,
+      "score": 8.7,
+      "releaseDate": "2026-10-27",
+      "desc": "《忍者神龟格斗（激龟快打）》是 FC 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1521405869/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/rzsggd",
+        "romPath": "/rzsggd/rzsggd.zip",
+        "statePath": "/rzsggd/adventure.state",
+        "romUrl": "games/1521405869/rom.zip",
+        "resourcesUrl": "games/1521405869/resources.zip",
+        "size": 140664
+      }
+    },
+    {
+      "id": "108333622",
+      "r2Id": "108333622",
+      "rank": 20,
+      "name": "97恐龙快打2代",
+      "shortName": "97恐龙快打2代",
+      "platform": "街机",
+      "package": "dinotpic",
+      "tags": [
+        "街机",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 34703,
+      "score": 9.7,
+      "releaseDate": "2026-10-27",
+      "desc": "《97恐龙快打2代》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/108333622/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinotpic",
+        "romPath": "/dinotpic/dinotpic.zip",
+        "statePath": "/dinotpic/adventure.state",
+        "romUrl": "games/108333622/rom.zip",
+        "resourcesUrl": "games/108333622/resources.zip",
+        "size": 2632102
+      }
+    },
+    {
+      "id": "1056989342",
+      "r2Id": "1056989342",
+      "rank": 21,
+      "name": "坦克大战",
+      "shortName": "坦克大战",
+      "platform": "FC",
+      "package": "tkdz",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 34264,
+      "score": 9.3,
+      "releaseDate": "2026-10-27",
+      "desc": "《坦克大战》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1056989342/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/tkdz",
+        "romPath": "/tkdz/tkdz.zip",
+        "statePath": "/tkdz/adventure.state",
+        "romUrl": "games/1056989342/rom.zip",
+        "resourcesUrl": "games/1056989342/resources.zip",
+        "size": 15989
+      }
+    },
+    {
+      "id": "3075033054",
+      "r2Id": "3075033054",
+      "rank": 22,
+      "name": "对决 奥特曼之激斗英雄 汉化版",
+      "shortName": "对决 奥特曼之激斗英雄 汉化版",
+      "platform": "GBA",
+      "package": "atmzjdyx",
+      "tags": [
+        "GBA",
+        "经典",
+        "改版"
+      ],
+      "players": 33938,
+      "score": 8.8,
+      "releaseDate": "2026-10-27",
+      "desc": "《对决 奥特曼之激斗英雄 汉化版》是 GBA 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3075033054/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/atmzjdyx",
+        "romPath": "/atmzjdyx/atmzjdyx.zip",
+        "statePath": "/atmzjdyx/adventure.state",
+        "romUrl": "games/3075033054/rom.zip",
+        "resourcesUrl": "games/3075033054/resources.zip",
+        "size": 4728537
+      }
+    },
+    {
+      "id": "639324639",
+      "r2Id": "639324639",
+      "rank": 23,
+      "name": "重装机兵 中文版",
+      "shortName": "重装机兵 中文版",
+      "platform": "FC",
+      "package": "zzjb",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 33615,
+      "score": 9.8,
+      "releaseDate": "2026-10-27",
+      "desc": "《重装机兵 中文版》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/639324639/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/zzjb",
+        "romPath": "/zzjb/zzjb.zip",
+        "statePath": "/zzjb/adventure.state",
+        "romUrl": "games/639324639/rom.zip",
+        "resourcesUrl": "games/639324639/resources.zip",
+        "size": 366725
+      }
+    },
+    {
+      "id": "2740590570",
+      "r2Id": "2740590570",
+      "rank": 24,
+      "name": "三国志2 霸王的大陆",
+      "shortName": "三国志2 霸王的大陆",
+      "platform": "FC",
+      "package": "sgz2bwddlwmb",
+      "tags": [
+        "FC",
+        "策略",
+        "怀旧"
+      ],
+      "players": 33310,
+      "score": 9.4,
+      "releaseDate": "2026-10-27",
+      "desc": "《三国志2 霸王的大陆》是 FC 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2740590570/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/sgz2bwddlwmb",
+        "romPath": "/sgz2bwddlwmb/sgz2bwddlwmb.zip",
+        "statePath": "/sgz2bwddlwmb/adventure.state",
+        "romUrl": "games/2740590570/rom.zip",
+        "resourcesUrl": "games/2740590570/resources.zip",
+        "size": 265456
+      }
+    },
+    {
+      "id": "563162603",
+      "r2Id": "563162603",
+      "rank": 25,
+      "name": "炸弹人",
+      "shortName": "炸弹人",
+      "platform": "FC",
+      "package": "zdr",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 32766,
+      "score": 8.9,
+      "releaseDate": "2026-10-25",
+      "desc": "《炸弹人》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/563162603/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/zdr",
+        "romPath": "/zdr/zdr.zip",
+        "statePath": "/zdr/adventure.state",
+        "romUrl": "games/563162603/rom.zip",
+        "resourcesUrl": "games/563162603/resources.zip",
+        "size": 16419
+      }
+    },
+    {
+      "id": "3562875477",
+      "r2Id": "3562875477",
+      "rank": 26,
+      "name": "三国志2 无双加强版",
+      "shortName": "三国志2 无双加强版",
+      "platform": "街机",
+      "package": "wofdwp",
+      "tags": [
+        "街机",
+        "策略",
+        "改版"
+      ],
+      "players": 32542,
+      "score": 8.5,
+      "releaseDate": "2026-10-25",
+      "desc": "《三国志2 无双加强版》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3562875477/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/wofdwp",
+        "romPath": "/wofdwp/wofdwp.zip",
+        "statePath": "/wofdwp/adventure.state",
+        "romUrl": "games/3562875477/rom.zip",
+        "resourcesUrl": "games/3562875477/resources.zip",
+        "size": 5511408
+      }
+    },
+    {
+      "id": "2785620260",
+      "r2Id": "2785620260",
+      "rank": 27,
+      "name": "赤色要塞",
+      "shortName": "赤色要塞",
+      "platform": "FC",
+      "package": "csys",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 32169,
+      "score": 9.5,
+      "releaseDate": "2026-10-25",
+      "desc": "《赤色要塞》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2785620260/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/csys",
+        "romPath": "/csys/csys.zip",
+        "statePath": "/csys/adventure.state",
+        "romUrl": "games/2785620260/rom.zip",
+        "resourcesUrl": "games/2785620260/resources.zip",
+        "size": 80083
+      }
+    },
+    {
+      "id": "884133498",
+      "r2Id": "884133498",
+      "rank": 28,
+      "name": "SD快打旋风",
+      "shortName": "SD快打旋风",
+      "platform": "FC",
+      "package": "SDkdxf",
+      "tags": [
+        "FC",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 31672,
+      "score": 9.1,
+      "releaseDate": "2026-10-25",
+      "desc": "《SD快打旋风》是 FC 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/884133498/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/SDkdxf",
+        "romPath": "/SDkdxf/SDkdxf.zip",
+        "statePath": "/SDkdxf/adventure.state",
+        "romUrl": "games/884133498/rom.zip",
+        "resourcesUrl": "games/884133498/resources.zip",
+        "size": 147575
+      }
+    },
+    {
+      "id": "470319217",
+      "r2Id": "470319217",
+      "rank": 29,
+      "name": "口袋妖怪 西班牙火箭队 五周目汉化",
+      "shortName": "口袋妖怪 西班牙火箭队 五周目汉化",
+      "platform": "GBA",
+      "package": "kdygxbyhjd",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "改版"
+      ],
+      "players": 31276,
+      "score": 8.6,
+      "releaseDate": "2026-10-25",
+      "desc": "《口袋妖怪 西班牙火箭队 五周目汉化》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/470319217/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygxbyhjd",
+        "romPath": "/kdygxbyhjd/kdygxbyhjd.zip",
+        "statePath": "/kdygxbyhjd/adventure.state",
+        "romUrl": "games/470319217/rom.zip",
+        "resourcesUrl": "games/470319217/resources.zip",
+        "size": 17151966
+      }
+    },
+    {
+      "id": "3695813938",
+      "r2Id": "3695813938",
+      "rank": 30,
+      "name": "口袋妖怪 西班牙火箭队3.05",
+      "shortName": "口袋妖怪 西班牙火箭队3.05",
+      "platform": "GBA",
+      "package": "kdygxbyhjdhhb",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 31083,
+      "score": 9.6,
+      "releaseDate": "2026-10-25",
+      "desc": "《口袋妖怪 西班牙火箭队3.05》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3695813938/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygxbyhjdhhb",
+        "romPath": "/kdygxbyhjdhhb/kdygxbyhjdhhb.zip",
+        "statePath": "/kdygxbyhjdhhb/adventure.state",
+        "romUrl": "games/3695813938/rom.zip",
+        "resourcesUrl": "games/3695813938/resources.zip",
+        "size": 17650484
+      }
+    },
+    {
+      "id": "3186559554",
+      "r2Id": "3186559554",
+      "rank": 31,
+      "name": "铁钩船长",
+      "shortName": "铁钩船长",
+      "platform": "街机",
+      "package": "hookj",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 30737,
+      "score": 9.2,
+      "releaseDate": "2026-10-25",
+      "desc": "《铁钩船长》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3186559554/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/hookj",
+        "romPath": "/hookj/hookj.zip",
+        "statePath": "/hookj/adventure.state",
+        "romUrl": "games/3186559554/rom.zip",
+        "resourcesUrl": "games/3186559554/resources.zip",
+        "size": 2961140
+      }
+    },
+    {
+      "id": "338506589",
+      "r2Id": "338506589",
+      "rank": 32,
+      "name": "NEO炸弹人",
+      "shortName": "NEO炸弹人",
+      "platform": "街机",
+      "package": "neobombe",
+      "tags": [
+        "街机",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 30293,
+      "score": 8.8,
+      "releaseDate": "2026-10-25",
+      "desc": "《NEO炸弹人》是 街机 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/338506589/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/neobombe",
+        "romPath": "/neobombe/neobombe.zip",
+        "statePath": "/neobombe/adventure.state",
+        "romUrl": "games/338506589/rom.zip",
+        "resourcesUrl": "games/338506589/resources.zip",
+        "size": 6155333
+      }
+    },
+    {
+      "id": "3371337950",
+      "r2Id": "3371337950",
+      "rank": 33,
+      "name": "热血格斗传说",
+      "shortName": "热血格斗传说",
+      "platform": "FC",
+      "package": "rxgdcs",
+      "tags": [
+        "FC",
+        "格斗",
+        "怀旧"
+      ],
+      "players": 29996,
+      "score": 9.7,
+      "releaseDate": "2026-10-23",
+      "desc": "《热血格斗传说》是 FC 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3371337950/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/rxgdcs",
+        "romPath": "/rxgdcs/rxgdcs.zip",
+        "statePath": "/rxgdcs/adventure.state",
+        "romUrl": "games/3371337950/rom.zip",
+        "resourcesUrl": "games/3371337950/resources.zip",
+        "size": 135720
+      }
+    },
+    {
+      "id": "2465501517",
+      "r2Id": "2465501517",
+      "rank": 34,
+      "name": "三国战纪119 完美版",
+      "shortName": "三国战纪119 完美版",
+      "platform": "街机",
+      "package": "kovplus",
+      "tags": [
+        "街机",
+        "策略",
+        "改版"
+      ],
+      "players": 29486,
+      "score": 9.3,
+      "releaseDate": "2026-10-23",
+      "desc": "《三国战纪119 完美版》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2465501517/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovplus",
+        "romPath": "/kovplus/kovplus.zip",
+        "statePath": "/kovplus/adventure.state",
+        "romUrl": "games/2465501517/rom.zip",
+        "resourcesUrl": "games/2465501517/resources.zip",
+        "size": 21016241
+      }
+    },
+    {
+      "id": "2254081428",
+      "r2Id": "2254081428",
+      "rank": 35,
+      "name": "三国战纪 富甲天下",
+      "shortName": "三国战纪 富甲天下",
+      "platform": "街机",
+      "package": "kovfjtx",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 29128,
+      "score": 8.9,
+      "releaseDate": "2026-10-23",
+      "desc": "《三国战纪 富甲天下》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2254081428/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovfjtx",
+        "romPath": "/kovfjtx/kovfjtx.zip",
+        "statePath": "/kovfjtx/adventure.state",
+        "romUrl": "games/2254081428/rom.zip",
+        "resourcesUrl": "games/2254081428/resources.zip",
+        "size": 19943981
+      }
+    },
+    {
+      "id": "911033564",
+      "r2Id": "911033564",
+      "rank": 36,
+      "name": "口袋妖怪 格查尔",
+      "shortName": "口袋妖怪 格查尔",
+      "platform": "GBA",
+      "package": "kdyggce",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 28810,
+      "score": 8.5,
+      "releaseDate": "2026-10-23",
+      "desc": "《口袋妖怪 格查尔》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/911033564/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdyggce",
+        "romPath": "/kdyggce/kdyggce.zip",
+        "statePath": "/kdyggce/adventure.state",
+        "romUrl": "games/911033564/rom.zip",
+        "resourcesUrl": "games/911033564/resources.zip",
+        "size": 14667687
+      }
+    },
+    {
+      "id": "3868826732",
+      "r2Id": "3868826732",
+      "rank": 37,
+      "name": "三国战纪2007",
+      "shortName": "三国战纪2007",
+      "platform": "街机",
+      "package": "kovp2k7",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 28461,
+      "score": 9.4,
+      "releaseDate": "2026-10-23",
+      "desc": "《三国战纪2007》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3868826732/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovp2k7",
+        "romPath": "/kovp2k7/kovp2k7.zip",
+        "statePath": "/kovp2k7/adventure.state",
+        "romUrl": "games/3868826732/rom.zip",
+        "resourcesUrl": "games/3868826732/resources.zip",
+        "size": 21136662
+      }
+    },
+    {
+      "id": "1999385152",
+      "r2Id": "1999385152",
+      "rank": 38,
+      "name": "电精2",
+      "shortName": "电精2",
+      "platform": "街机",
+      "package": "grdians",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 27943,
+      "score": 9,
+      "releaseDate": "2026-10-23",
+      "desc": "《电精2》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1999385152/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/grdians",
+        "romPath": "/grdians/grdians.zip",
+        "statePath": "/grdians/adventure.state",
+        "romUrl": "games/1999385152/rom.zip",
+        "resourcesUrl": "games/1999385152/resources.zip",
+        "size": 13613296
+      }
+    },
+    {
+      "id": "1398464272",
+      "r2Id": "1398464272",
+      "rank": 39,
+      "name": "三国战纪 乱世枭雄",
+      "shortName": "三国战纪 乱世枭雄",
+      "platform": "街机",
+      "package": "kovshp",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 27730,
+      "score": 8.6,
+      "releaseDate": "2026-10-23",
+      "desc": "《三国战纪 乱世枭雄》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1398464272/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovshp",
+        "romPath": "/kovshp/kovshp.zip",
+        "statePath": "/kovshp/adventure.state",
+        "romUrl": "games/1398464272/rom.zip",
+        "resourcesUrl": "games/1398464272/resources.zip",
+        "size": 21372178
+      }
+    },
+    {
+      "id": "1286348009",
+      "r2Id": "1286348009",
+      "rank": 40,
+      "name": "圆桌骑士",
+      "shortName": "圆桌骑士",
+      "platform": "街机",
+      "package": "knights",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 27213,
+      "score": 9.6,
+      "releaseDate": "2026-10-23",
+      "desc": "《圆桌骑士》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1286348009/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/knights",
+        "romPath": "/knights/knights.zip",
+        "statePath": "/knights/adventure.state",
+        "romUrl": "games/1286348009/rom.zip",
+        "resourcesUrl": "games/1286348009/resources.zip",
+        "size": 2283111
+      }
+    },
+    {
+      "id": "1001073791",
+      "r2Id": "1001073791",
+      "rank": 41,
+      "name": "惩罚者",
+      "shortName": "惩罚者",
+      "platform": "街机",
+      "package": "punisher",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 26946,
+      "score": 9.1,
+      "releaseDate": "2026-10-21",
+      "desc": "《惩罚者》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1001073791/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/punisher",
+        "romPath": "/punisher/punisher.zip",
+        "statePath": "/punisher/adventure.state",
+        "romUrl": "games/1001073791/rom.zip",
+        "resourcesUrl": "games/1001073791/resources.zip",
+        "size": 3895592
+      }
+    },
+    {
+      "id": "721834261",
+      "r2Id": "721834261",
+      "rank": 42,
+      "name": "战国传承3",
+      "shortName": "战国传承3",
+      "platform": "街机",
+      "package": "sengoku3",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 26556,
+      "score": 8.7,
+      "releaseDate": "2026-10-21",
+      "desc": "《战国传承3》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/721834261/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/sengoku3",
+        "romPath": "/sengoku3/sengoku3.zip",
+        "statePath": "/sengoku3/adventure.state",
+        "romUrl": "games/721834261/rom.zip",
+        "resourcesUrl": "games/721834261/resources.zip",
+        "size": 20625844
+      }
+    },
+    {
+      "id": "4137509635",
+      "r2Id": "4137509635",
+      "rank": 43,
+      "name": "口袋妖怪 漆黑的魅影5.0EX＋DP",
+      "shortName": "口袋妖怪 漆黑的魅影5.0EX＋DP",
+      "platform": "GBA",
+      "package": "kdygqhdmy50expdp",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 26175,
+      "score": 9.7,
+      "releaseDate": "2026-10-21",
+      "desc": "《口袋妖怪 漆黑的魅影5.0EX＋DP》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4137509635/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygqhdmy50expdp",
+        "romPath": "/kdygqhdmy50expdp/kdygqhdmy50expdp.zip",
+        "statePath": "/kdygqhdmy50expdp/adventure.state",
+        "romUrl": "games/4137509635/rom.zip",
+        "resourcesUrl": "games/4137509635/resources.zip",
+        "size": 8332466
+      }
+    },
+    {
+      "id": "395302752",
+      "r2Id": "395302752",
+      "rank": 44,
+      "name": "口袋妖怪 火红",
+      "shortName": "口袋妖怪 火红",
+      "platform": "GBA",
+      "package": "kdyghh",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 25880,
+      "score": 9.3,
+      "releaseDate": "2026-10-21",
+      "desc": "《口袋妖怪 火红》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/395302752/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdyghh",
+        "romPath": "/kdyghh/kdyghh.zip",
+        "statePath": "/kdyghh/adventure.state",
+        "romUrl": "games/395302752/rom.zip",
+        "resourcesUrl": "games/395302752/resources.zip",
+        "size": 5685810
+      }
+    },
+    {
+      "id": "3592176172",
+      "r2Id": "3592176172",
+      "rank": 45,
+      "name": "恐龙快打 勇士版",
+      "shortName": "恐龙快打 勇士版",
+      "platform": "街机",
+      "package": "dinoyz",
+      "tags": [
+        "街机",
+        "格斗",
+        "改版"
+      ],
+      "players": 25481,
+      "score": 8.8,
+      "releaseDate": "2026-10-21",
+      "desc": "《恐龙快打 勇士版》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3592176172/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinoyz",
+        "romPath": "/dinoyz/dinoyz.zip",
+        "statePath": "/dinoyz/adventure.state",
+        "romUrl": "games/3592176172/rom.zip",
+        "resourcesUrl": "games/3592176172/resources.zip",
+        "size": 4444896
+      }
+    },
+    {
+      "id": "3057906787",
+      "r2Id": "3057906787",
+      "rank": 46,
+      "name": "冒险岛3",
+      "shortName": "冒险岛3",
+      "platform": "FC",
+      "package": "mxd3",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 25028,
+      "score": 9.8,
+      "releaseDate": "2026-10-21",
+      "desc": "《冒险岛3》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3057906787/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/mxd3",
+        "romPath": "/mxd3/mxd3.zip",
+        "statePath": "/mxd3/adventure.state",
+        "romUrl": "games/3057906787/rom.zip",
+        "resourcesUrl": "games/3057906787/resources.zip",
+        "size": 143798
+      }
+    },
+    {
+      "id": "2581388577",
+      "r2Id": "2581388577",
+      "rank": 47,
+      "name": "口袋妖怪 解放 2.1.1.1",
+      "shortName": "口袋妖怪 解放 2.1.1.1",
+      "platform": "GBA",
+      "package": "kdygjf2111",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 24628,
+      "score": 9.4,
+      "releaseDate": "2026-10-21",
+      "desc": "《口袋妖怪 解放 2.1.1.1》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2581388577/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygjf2111",
+        "romPath": "/kdygjf2111/kdygjf2111.zip",
+        "statePath": "/kdygjf2111/adventure.state",
+        "romUrl": "games/2581388577/rom.zip",
+        "resourcesUrl": "games/2581388577/resources.zip",
+        "size": 19846984
+      }
+    },
+    {
+      "id": "865949429",
+      "r2Id": "865949429",
+      "rank": 48,
+      "name": "忍者神龟3",
+      "shortName": "忍者神龟3",
+      "platform": "FC",
+      "package": "rzsg3",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 24394,
+      "score": 8.9,
+      "releaseDate": "2026-10-21",
+      "desc": "《忍者神龟3》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/865949429/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/rzsg3",
+        "romPath": "/rzsg3/rzsg3.zip",
+        "statePath": "/rzsg3/adventure.state",
+        "romUrl": "games/865949429/rom.zip",
+        "resourcesUrl": "games/865949429/resources.zip",
+        "size": 284750
+      }
+    },
+    {
+      "id": "4168643380",
+      "r2Id": "4168643380",
+      "rank": 49,
+      "name": "雷电",
+      "shortName": "雷电",
+      "platform": "街机",
+      "package": "raiden",
+      "tags": [
+        "街机",
+        "射击",
+        "怀旧"
+      ],
+      "players": 24017,
+      "score": 8.5,
+      "releaseDate": "2026-10-19",
+      "desc": "《雷电》是 街机 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4168643380/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/raiden",
+        "romPath": "/raiden/raiden.zip",
+        "statePath": "/raiden/adventure.state",
+        "romUrl": "games/4168643380/rom.zip",
+        "resourcesUrl": "games/4168643380/resources.zip",
+        "size": 993959
+      }
+    },
+    {
+      "id": "4068708485",
+      "r2Id": "4068708485",
+      "rank": 50,
+      "name": "口袋妖怪 剑盾10.2",
+      "shortName": "口袋妖怪 剑盾10.2",
+      "platform": "GBA",
+      "package": "jdgba",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 23627,
+      "score": 9.5,
+      "releaseDate": "2026-10-19",
+      "desc": "《口袋妖怪 剑盾10.2》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4068708485/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/jdgba",
+        "romPath": "/jdgba/jdgba.zip",
+        "statePath": "/jdgba/adventure.state",
+        "romUrl": "games/4068708485/rom.zip",
+        "resourcesUrl": "games/4068708485/resources.zip",
+        "size": 9611275
+      }
+    },
+    {
+      "id": "3281883942",
+      "r2Id": "3281883942",
+      "rank": 51,
+      "name": "恐龙快打 天王版 暴击显示",
+      "shortName": "恐龙快打 天王版 暴击显示",
+      "platform": "街机",
+      "package": "dinowtwbj",
+      "tags": [
+        "街机",
+        "格斗",
+        "改版"
+      ],
+      "players": 23200,
+      "score": 9.1,
+      "releaseDate": "2026-10-19",
+      "desc": "《恐龙快打 天王版 暴击显示》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3281883942/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinowtwbj",
+        "romPath": "/dinowtwbj/dinowtwbj.zip",
+        "statePath": "/dinowtwbj/adventure.state",
+        "romUrl": "games/3281883942/rom.zip",
+        "resourcesUrl": "games/3281883942/resources.zip",
+        "size": 4131301
+      }
+    },
+    {
+      "id": "2653682608",
+      "r2Id": "2653682608",
+      "rank": 52,
+      "name": "龙珠大冒险",
+      "shortName": "龙珠大冒险",
+      "platform": "GBA",
+      "package": "lzdmx",
+      "tags": [
+        "GBA",
+        "经典",
+        "怀旧"
+      ],
+      "players": 22934,
+      "score": 8.6,
+      "releaseDate": "2026-10-19",
+      "desc": "《龙珠大冒险》是 GBA 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2653682608/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/lzdmx",
+        "romPath": "/lzdmx/lzdmx.zip",
+        "statePath": "/lzdmx/adventure.state",
+        "romUrl": "games/2653682608/rom.zip",
+        "resourcesUrl": "games/2653682608/resources.zip",
+        "size": 5527663
+      }
+    },
+    {
+      "id": "2440054051",
+      "r2Id": "2440054051",
+      "rank": 53,
+      "name": "俄罗斯方块",
+      "shortName": "俄罗斯方块",
+      "platform": "FC",
+      "package": "elsfk",
+      "tags": [
+        "FC",
+        "益智",
+        "怀旧"
+      ],
+      "players": 22434,
+      "score": 9.6,
+      "releaseDate": "2026-10-19",
+      "desc": "《俄罗斯方块》是 FC 平台的益智作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2440054051/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/elsfk",
+        "romPath": "/elsfk/elsfk.zip",
+        "statePath": "/elsfk/adventure.state",
+        "romUrl": "games/2440054051/rom.zip",
+        "resourcesUrl": "games/2440054051/resources.zip",
+        "size": 25560
+      }
+    },
+    {
+      "id": "2398874910",
+      "r2Id": "2398874910",
+      "rank": 54,
+      "name": "名将",
+      "shortName": "名将",
+      "platform": "街机",
+      "package": "captcommu",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 22105,
+      "score": 9.2,
+      "releaseDate": "2026-10-19",
+      "desc": "《名将》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2398874910/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/captcommu",
+        "romPath": "/captcommu/captcommu.zip",
+        "statePath": "/captcommu/adventure.state",
+        "romUrl": "games/2398874910/rom.zip",
+        "resourcesUrl": "games/2398874910/resources.zip",
+        "size": 3189774
+      }
+    },
+    {
+      "id": "1072158899",
+      "r2Id": "1072158899",
+      "rank": 55,
+      "name": "绿色兵团",
+      "shortName": "绿色兵团",
+      "platform": "FC",
+      "package": "lsbt",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 21818,
+      "score": 8.8,
+      "releaseDate": "2026-10-19",
+      "desc": "《绿色兵团》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1072158899/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/lsbt",
+        "romPath": "/lsbt/lsbt.zip",
+        "statePath": "/lsbt/adventure.state",
+        "romUrl": "games/1072158899/rom.zip",
+        "resourcesUrl": "games/1072158899/resources.zip",
+        "size": 59948
+      }
+    },
+    {
+      "id": "9895614",
+      "r2Id": "9895614",
+      "rank": 56,
+      "name": "雪人兄弟 街机版",
+      "shortName": "雪人兄弟 街机版",
+      "platform": "街机",
+      "package": "snowbros",
+      "tags": [
+        "街机",
+        "经典",
+        "改版"
+      ],
+      "players": 21416,
+      "score": 9.7,
+      "releaseDate": "2026-10-19",
+      "desc": "《雪人兄弟 街机版》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/9895614/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/snowbros",
+        "romPath": "/snowbros/snowbros.zip",
+        "statePath": "/snowbros/adventure.state",
+        "romUrl": "games/9895614/rom.zip",
+        "resourcesUrl": "games/9895614/resources.zip",
+        "size": 2993624
+      }
+    },
+    {
+      "id": "3483323591",
+      "r2Id": "3483323591",
+      "rank": 57,
+      "name": "魂斗罗 力量",
+      "shortName": "魂斗罗 力量",
+      "platform": "FC",
+      "package": "hdlll",
+      "tags": [
+        "FC",
+        "射击",
+        "怀旧"
+      ],
+      "players": 21039,
+      "score": 9.3,
+      "releaseDate": "2026-10-17",
+      "desc": "《魂斗罗 力量》是 FC 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3483323591/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/hdlll",
+        "romPath": "/hdlll/hdlll.zip",
+        "statePath": "/hdlll/adventure.state",
+        "romUrl": "games/3483323591/rom.zip",
+        "resourcesUrl": "games/3483323591/resources.zip",
+        "size": 168080
+      }
+    },
+    {
+      "id": "3342769352",
+      "r2Id": "3342769352",
+      "rank": 58,
+      "name": "三国战纪2 明月彩华集气快",
+      "shortName": "三国战纪2 明月彩华集气快",
+      "platform": "街机",
+      "package": "kov2p205",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 20704,
+      "score": 8.9,
+      "releaseDate": "2026-10-17",
+      "desc": "《三国战纪2 明月彩华集气快》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3342769352/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kov2p205",
+        "romPath": "/kov2p205/kov2p205.zip",
+        "statePath": "/kov2p205/adventure.state",
+        "romUrl": "games/3342769352/rom.zip",
+        "resourcesUrl": "games/3342769352/resources.zip",
+        "size": 25384954
+      }
+    },
+    {
+      "id": "3242509557",
+      "r2Id": "3242509557",
+      "rank": 59,
+      "name": "魂斗罗2",
+      "shortName": "魂斗罗2",
+      "platform": "FC",
+      "package": "hdl2",
+      "tags": [
+        "FC",
+        "射击",
+        "怀旧"
+      ],
+      "players": 20354,
       "score": 8.5,
       "releaseDate": "2026-10-17",
-      "desc": "藤蔓、遗迹和会说话的鹦鹉。带上地图深入丛林，寻找传说中失落的金色果实。",
-      "cover": null,
-      "coverTone": 2,
-      "screenshots": [
-        { "label": "雨林入口", "tone": "forest" },
-        { "label": "古代遗迹", "tone": "dungeon" },
-        { "label": "树冠之上", "tone": "sky" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "midnight-drift-05",
-      "name": "午夜漂移 05",
-      "platform": "街机",
-      "tags": ["街机", "竞速", "漂移"],
-      "players": 105,
-      "score": 9.0,
-      "releaseDate": "2026-10-16",
-      "desc": "没有终点，只有下一段弯道。掌握漂移节奏，在霓虹赛道上刷新自己的最快圈速。",
-      "cover": null,
+      "desc": "《魂斗罗2》是 FC 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3242509557/cover.png",
+      "coverExt": "png",
       "coverTone": 4,
       "screenshots": [
-        { "label": "夜色赛道", "tone": "neon" },
-        { "label": "连续发卡弯", "tone": "city" },
-        { "label": "最后一圈", "tone": "sunset" }
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/hdl2",
+        "romPath": "/hdl2/hdl2.zip",
+        "statePath": "/hdl2/adventure.state",
+        "romUrl": "games/3242509557/rom.zip",
+        "resourcesUrl": "games/3242509557/resources.zip",
+        "size": 148900
+      }
     },
     {
-      "id": "bubble-hunter-06",
-      "name": "泡泡猎人 06",
-      "platform": "FC",
-      "tags": ["FC", "休闲", "益智"],
-      "players": 138,
-      "score": 8.1,
-      "releaseDate": "2026-10-16",
-      "desc": "把同色泡泡连在一起，一口气消掉整片屏幕。简单规则，停不下来的连锁爽感。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "泡泡工坊", "tone": "sky" },
-        { "label": "连锁消除", "tone": "neon" },
-        { "label": "无尽模式", "tone": "city" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "iron-squad-07",
-      "name": "铁甲战士 07",
-      "platform": "GBA",
-      "tags": ["GBA", "动作", "横版"],
-      "players": 520,
-      "score": 8.7,
-      "releaseDate": "2026-10-10",
-      "desc": "穿上动力装甲，穿过被占领的工业区。三种武器随时切换，用最直接的方式突破防线。",
-      "cover": null,
-      "coverTone": 3,
-      "screenshots": [
-        { "label": "登陆作战", "tone": "city" },
-        { "label": "工厂突围", "tone": "dungeon" },
-        { "label": "最终防线", "tone": "sunset" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "gem-puzzle-08",
-      "name": "宝石迷阵 08",
-      "platform": "FC",
-      "tags": ["FC", "益智", "休闲"],
-      "players": 340,
-      "score": 8.3,
-      "releaseDate": "2026-10-10",
-      "desc": "交换相邻宝石，凑出三颗同色。看似平静的棋盘，往往藏着惊人的连击。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "宝石矿洞", "tone": "dungeon" },
-        { "label": "连锁反应", "tone": "neon" },
-        { "label": "无尽挑战", "tone": "sky" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "street-hoop-09",
-      "name": "街头篮球 09",
+      "id": "2443095290",
+      "r2Id": "2443095290",
+      "rank": 60,
+      "name": "三国志 三圣剑",
+      "shortName": "三国志 三圣剑",
       "platform": "街机",
-      "tags": ["街机", "体育", "对战"],
-      "players": 863,
-      "score": 8.6,
-      "releaseDate": "2026-10-03",
-      "desc": "三对三街头斗牛，花式运球、空中接力、最后一秒绝杀。把球投进，剩下的交给欢呼。",
-      "cover": null,
-      "coverTone": 4,
-      "screenshots": [
-        { "label": "街区球场", "tone": "sunset" },
-        { "label": "空中接力", "tone": "city" },
-        { "label": "压哨绝杀", "tone": "neon" }
+      "package": "wof3sj",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
       ],
-      "playable": false
-    },
-    {
-      "id": "mech-defense-10",
-      "name": "机甲防线 10",
-      "platform": "街机",
-      "tags": ["街机", "策略", "塔防"],
-      "players": 13396,
-      "score": 9.1,
-      "releaseDate": "2026-10-03",
-      "desc": "布置炮台、升级机甲，在潮水般的敌人中守住基地。每一次排兵布阵，都会改变战局。",
-      "cover": null,
-      "coverTone": 3,
-      "screenshots": [
-        { "label": "基地警报", "tone": "city" },
-        { "label": "机甲出击", "tone": "neon" },
-        { "label": "最后一波", "tone": "dungeon" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "snow-peak-11",
-      "name": "雪山攀登 11",
-      "platform": "GBA",
-      "tags": ["GBA", "冒险", "探索"],
-      "players": 2450,
-      "score": 8.4,
-      "releaseDate": "2026-09-28",
-      "desc": "带上绳索和热汤，向山顶出发。风雪会改变路线，也会藏着意料之外的风景。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "山脚营地", "tone": "snow" },
-        { "label": "冰壁攀登", "tone": "sky" },
-        { "label": "云海日出", "tone": "sunset" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "thunder-fighter-12",
-      "name": "雷霆战机 12",
-      "platform": "FC",
-      "tags": ["FC", "射击", "弹幕"],
-      "players": 24288,
+      "players": 19940,
       "score": 9.4,
-      "releaseDate": "2026-09-28",
-      "desc": "经典纵版弹幕射击。收集火力、躲避弹雨，在越来越快的节奏里坚持到最后一关。",
-      "cover": null,
-      "coverTone": 4,
-      "screenshots": [
-        { "label": "编队起飞", "tone": "space" },
-        { "label": "弹幕来袭", "tone": "neon" },
-        { "label": "终极战机", "tone": "sunset" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "blood-arena-13",
-      "name": "热血格斗 13",
-      "platform": "街机",
-      "tags": ["街机", "格斗", "对战"],
-      "players": 22878,
-      "score": 9.3,
-      "releaseDate": "2026-09-20",
-      "desc": "选一名角色，走上擂台。普通拳脚、必杀连段和读心般的防守，胜负只在毫秒之间。",
-      "cover": null,
-      "coverTone": 2,
-      "screenshots": [
-        { "label": "擂台开场", "tone": "sunset" },
-        { "label": "连段对决", "tone": "neon" },
-        { "label": "最终回合", "tone": "city" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "dungeon-quest-14",
-      "name": "地牢冒险 14",
-      "platform": "GBA",
-      "tags": ["GBA", "角色扮演", "地牢"],
-      "players": 3973,
-      "score": 8.8,
-      "releaseDate": "2026-09-20",
-      "desc": "火把照亮下一间石室，宝箱旁边总藏着怪物。组建队伍，向地牢更深处进发。",
-      "cover": null,
-      "coverTone": 3,
-      "screenshots": [
-        { "label": "地牢入口", "tone": "dungeon" },
-        { "label": "宝箱守卫", "tone": "neon" },
-        { "label": "深渊之门", "tone": "city" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "turbo-drift-15",
-      "name": "极速漂移 15",
-      "platform": "街机",
-      "tags": ["街机", "竞速", "一键漂移"],
-      "players": 8665,
-      "score": 8.5,
-      "releaseDate": "2026-09-18",
-      "desc": "改装、加速、漂移。用最短的路线穿过城市，把氮气留给最后的直道。",
-      "cover": null,
+      "releaseDate": "2026-10-17",
+      "desc": "《三国志 三圣剑》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2443095290/cover.png",
+      "coverExt": "png",
       "coverTone": 1,
       "screenshots": [
-        { "label": "车库准备", "tone": "city" },
-        { "label": "隧道加速", "tone": "neon" },
-        { "label": "冲线时刻", "tone": "sunset" }
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/wof3sj",
+        "romPath": "/wof3sj/wof3sj.zip",
+        "statePath": "/wof3sj/adventure.state",
+        "romUrl": "games/2443095290/rom.zip",
+        "resourcesUrl": "games/2443095290/resources.zip",
+        "size": 2750871
+      }
     },
     {
-      "id": "magic-academy-16",
-      "name": "魔法学院 16",
-      "platform": "GBA",
-      "tags": ["GBA", "角色扮演", "魔法"],
-      "players": 13396,
-      "score": 8.7,
-      "releaseDate": "2026-09-15",
-      "desc": "入学第一天就捡到了一本会说话的法术书。上课、练咒、探索学院，顺便拯救一下世界。",
-      "cover": null,
+      "id": "174465372",
+      "r2Id": "174465372",
+      "rank": 61,
+      "name": "群雄起源 女将版154",
+      "shortName": "群雄起源 女将版154",
+      "platform": "FC",
+      "package": "qxqy154nj",
+      "tags": [
+        "FC",
+        "策略",
+        "改版"
+      ],
+      "players": 19452,
+      "score": 9,
+      "releaseDate": "2026-10-17",
+      "desc": "《群雄起源 女将版154》是 FC 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/174465372/cover.png",
+      "coverExt": "png",
       "coverTone": 2,
       "screenshots": [
-        { "label": "学院长廊", "tone": "sky" },
-        { "label": "咒语练习", "tone": "neon" },
-        { "label": "禁书区", "tone": "dungeon" }
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/qxqy154nj",
+        "romPath": "/qxqy154nj/qxqy154nj.zip",
+        "statePath": "/qxqy154nj/adventure.state",
+        "romUrl": "games/174465372/rom.zip",
+        "resourcesUrl": "games/174465372/resources.zip",
+        "size": 289631
+      }
     },
     {
-      "id": "boxing-king-17",
-      "name": "拳王争霸 17",
-      "platform": "FC",
-      "tags": ["FC", "格斗", "运动"],
-      "players": 15058,
-      "score": 8.9,
-      "releaseDate": "2026-09-15",
-      "desc": "戴上手套，登上拳台。观察对手的出拳节奏，在防守反击中拿下金腰带。",
-      "cover": null,
-      "coverTone": 4,
-      "screenshots": [
-        { "label": "赛前称重", "tone": "city" },
-        { "label": "回合交锋", "tone": "sunset" },
-        { "label": "冠军之夜", "tone": "neon" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "pinball-land-18",
-      "name": "弹珠乐园 18",
-      "platform": "FC",
-      "tags": ["FC", "休闲", "弹珠"],
-      "players": 3200,
-      "score": 8.0,
-      "releaseDate": "2026-09-10",
-      "desc": "控制挡板，把弹珠送进高分区域。每一次碰撞都可能触发隐藏奖励。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "乐园开场", "tone": "sunset" },
-        { "label": "连击奖励", "tone": "neon" },
-        { "label": "高分挑战", "tone": "sky" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "wild-gunner-19",
-      "name": "荒野枪手 19",
+      "id": "161304317",
+      "r2Id": "161304317",
+      "rank": 62,
+      "name": "名将 4人联机版",
+      "shortName": "名将 4人联机版",
       "platform": "街机",
-      "tags": ["街机", "射击", "闯关"],
-      "players": 1200,
-      "score": 8.2,
-      "releaseDate": "2026-09-08",
-      "desc": "风滚草掠过小镇，枪声随时可能响起。拔枪、瞄准、掩护，一路追到边境尽头。",
-      "cover": null,
-      "coverTone": 3,
-      "screenshots": [
-        { "label": "荒野小镇", "tone": "sunset" },
-        { "label": "酒馆对峙", "tone": "dungeon" },
-        { "label": "边境决战", "tone": "city" }
+      "package": "captcomm",
+      "tags": [
+        "街机",
+        "经典",
+        "改版"
       ],
-      "playable": false
-    },
-    {
-      "id": "deep-sea-20",
-      "name": "深海探秘 20",
-      "platform": "GBA",
-      "tags": ["GBA", "探索", "冒险"],
-      "players": 640,
+      "players": 19152,
       "score": 8.6,
-      "releaseDate": "2026-09-05",
-      "desc": "驾驶小型潜艇下潜到光无法抵达的地方。收集样本、记录生物，别让氧气表见底。",
-      "cover": null,
-      "coverTone": 4,
-      "screenshots": [
-        { "label": "海面下潜", "tone": "sky" },
-        { "label": "珊瑚峡谷", "tone": "neon" },
-        { "label": "深海遗迹", "tone": "dungeon" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "pixel-rally-21",
-      "name": "像素拉力 21",
-      "platform": "FC",
-      "tags": ["FC", "竞速", "积分赛"],
-      "players": 38820,
-      "score": 9.5,
-      "releaseDate": "2026-09-01",
-      "desc": "沙地、雪原、夜路，一条赛道一种脾气。用最朴素的像素画面，跑出最纯粹的拉力乐趣。",
-      "cover": null,
-      "coverTone": 2,
-      "screenshots": [
-        { "label": "发车计时", "tone": "sunset" },
-        { "label": "雪地赛段", "tone": "snow" },
-        { "label": "夜路冲刺", "tone": "neon" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "block-knight-22",
-      "name": "方块骑士 22",
-      "platform": "GBA",
-      "tags": ["GBA", "动作", "解谜"],
-      "players": 2050,
-      "score": 8.4,
-      "releaseDate": "2026-08-28",
-      "desc": "把方块推到正确的位置，为骑士打开下一道门。看似简单的机关，越到后面越需要耐心。",
-      "cover": null,
-      "coverTone": 1,
-      "screenshots": [
-        { "label": "城堡入口", "tone": "dungeon" },
-        { "label": "机关回廊", "tone": "city" },
-        { "label": "王座之间", "tone": "sunset" }
-      ],
-      "playable": false
-    },
-    {
-      "id": "space-invader-23",
-      "name": "太空入侵 23",
-      "platform": "街机",
-      "tags": ["街机", "射击", "经典"],
-      "players": 19800,
-      "score": 9.2,
-      "releaseDate": "2026-08-25",
-      "desc": "一排排像素外星人正在逼近。左右移动、寻找空隙、清理整屏，这是属于街机厅的原始快乐。",
-      "cover": null,
+      "releaseDate": "2026-10-17",
+      "desc": "《名将 4人联机版》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/161304317/cover.png",
+      "coverExt": "png",
       "coverTone": 3,
       "screenshots": [
-        { "label": "警报响起", "tone": "space" },
-        { "label": "编队逼近", "tone": "neon" },
-        { "label": "最后防线", "tone": "city" }
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/captcomm",
+        "romPath": "/captcomm/captcomm.zip",
+        "statePath": "/captcomm/adventure.state",
+        "romUrl": "games/161304317/rom.zip",
+        "resourcesUrl": "games/161304317/resources.zip",
+        "size": 2473647
+      }
     },
     {
-      "id": "forest-story-24",
-      "name": "森林物语 24",
-      "platform": "GBA",
-      "tags": ["GBA", "休闲", "治愈"],
-      "players": 760,
-      "score": 8.3,
-      "releaseDate": "2026-08-20",
-      "desc": "在小木屋旁种一片花，和森林里的邻居聊聊天。没有倒计时，只有慢慢流过的下午。",
-      "cover": null,
+      "id": "1412897545",
+      "r2Id": "1412897545",
+      "rank": 63,
+      "name": "傲剑狂刀",
+      "shortName": "傲剑狂刀",
+      "platform": "街机",
+      "package": "killbld",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 18879,
+      "score": 9.6,
+      "releaseDate": "2026-10-17",
+      "desc": "《傲剑狂刀》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1412897545/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/killbld",
+        "romPath": "/killbld/killbld.zip",
+        "statePath": "/killbld/adventure.state",
+        "romUrl": "games/1412897545/rom.zip",
+        "resourcesUrl": "games/1412897545/resources.zip",
+        "size": 15417383
+      }
+    },
+    {
+      "id": "1226998290",
+      "r2Id": "1226998290",
+      "rank": 64,
+      "name": "中国象棋",
+      "shortName": "中国象棋",
+      "platform": "FC",
+      "package": "zgxq",
+      "tags": [
+        "FC",
+        "益智",
+        "怀旧"
+      ],
+      "players": 18483,
+      "score": 9.1,
+      "releaseDate": "2026-10-17",
+      "desc": "《中国象棋》是 FC 平台的益智作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1226998290/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/zgxq",
+        "romPath": "/zgxq/zgxq.zip",
+        "statePath": "/zgxq/adventure.state",
+        "romUrl": "games/1226998290/rom.zip",
+        "resourcesUrl": "games/1226998290/resources.zip",
+        "size": 18450
+      }
+    },
+    {
+      "id": "978217417",
+      "r2Id": "978217417",
+      "rank": 65,
+      "name": "三国志1 中原之霸者 汉化版",
+      "shortName": "三国志1 中原之霸者 汉化版",
+      "platform": "FC",
+      "package": "sgz1zyzbzzwb",
+      "tags": [
+        "FC",
+        "策略",
+        "改版"
+      ],
+      "players": 18056,
+      "score": 8.7,
+      "releaseDate": "2026-10-15",
+      "desc": "《三国志1 中原之霸者 汉化版》是 FC 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/978217417/cover.png",
+      "coverExt": "png",
       "coverTone": 2,
       "screenshots": [
-        { "label": "林间小屋", "tone": "forest" },
-        { "label": "溪边午后", "tone": "sky" },
-        { "label": "萤火之夜", "tone": "neon" }
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
       ],
-      "playable": false
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/sgz1zyzbzzwb",
+        "romPath": "/sgz1zyzbzzwb/sgz1zyzbzzwb.zip",
+        "statePath": "/sgz1zyzbzzwb/adventure.state",
+        "romUrl": "games/978217417/rom.zip",
+        "resourcesUrl": "games/978217417/resources.zip",
+        "size": 151890
+      }
+    },
+    {
+      "id": "654109170",
+      "r2Id": "654109170",
+      "rank": 66,
+      "name": "超级玛丽3",
+      "shortName": "超级玛丽3",
+      "platform": "FC",
+      "package": "cjmlaxd3",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 17677,
+      "score": 9.7,
+      "releaseDate": "2026-10-15",
+      "desc": "《超级玛丽3》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/654109170/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/cjmlaxd3",
+        "romPath": "/cjmlaxd3/cjmlaxd3.zip",
+        "statePath": "/cjmlaxd3/adventure.state",
+        "romUrl": "games/654109170/rom.zip",
+        "resourcesUrl": "games/654109170/resources.zip",
+        "size": 228864
+      }
+    },
+    {
+      "id": "613232351",
+      "r2Id": "613232351",
+      "rank": 67,
+      "name": "圣火徽章 原版修正版4.0",
+      "shortName": "圣火徽章 原版修正版4.0",
+      "platform": "FC",
+      "package": "shhzbugxfb",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 17307,
+      "score": 9.3,
+      "releaseDate": "2026-10-15",
+      "desc": "《圣火徽章 原版修正版4.0》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/613232351/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/shhzbugxfb",
+        "romPath": "/shhzbugxfb/shhzbugxfb.zip",
+        "statePath": "/shhzbugxfb/adventure.state",
+        "romUrl": "games/613232351/rom.zip",
+        "resourcesUrl": "games/613232351/resources.zip",
+        "size": 244496
+      }
+    },
+    {
+      "id": "4266647288",
+      "r2Id": "4266647288",
+      "rank": 68,
+      "name": "忍者神龟",
+      "shortName": "忍者神龟",
+      "platform": "街机",
+      "package": "tmnt",
+      "tags": [
+        "街机",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 16881,
+      "score": 8.8,
+      "releaseDate": "2026-10-15",
+      "desc": "《忍者神龟》是 街机 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4266647288/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/tmnt",
+        "romPath": "/tmnt/tmnt.zip",
+        "statePath": "/tmnt/adventure.state",
+        "romUrl": "games/4266647288/rom.zip",
+        "resourcesUrl": "games/4266647288/resources.zip",
+        "size": 1848147
+      }
+    },
+    {
+      "id": "4148056763",
+      "r2Id": "4148056763",
+      "rank": 69,
+      "name": "打击者1945 加强版",
+      "shortName": "打击者1945 加强版",
+      "platform": "街机",
+      "package": "s1945p",
+      "tags": [
+        "街机",
+        "射击",
+        "改版"
+      ],
+      "players": 16637,
+      "score": 9.8,
+      "releaseDate": "2026-10-15",
+      "desc": "《打击者1945 加强版》是 街机 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4148056763/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/s1945p",
+        "romPath": "/s1945p/s1945p.zip",
+        "statePath": "/s1945p/adventure.state",
+        "romUrl": "games/4148056763/rom.zip",
+        "resourcesUrl": "games/4148056763/resources.zip",
+        "size": 30652941
+      }
+    },
+    {
+      "id": "3901410772",
+      "r2Id": "3901410772",
+      "rank": 70,
+      "name": "雪人兄弟2",
+      "shortName": "雪人兄弟2",
+      "platform": "街机",
+      "package": "snowbro2",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 16194,
+      "score": 9.4,
+      "releaseDate": "2026-10-15",
+      "desc": "《雪人兄弟2》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3901410772/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/snowbro2",
+        "romPath": "/snowbro2/snowbro2.zip",
+        "statePath": "/snowbro2/adventure.state",
+        "romUrl": "games/3901410772/rom.zip",
+        "resourcesUrl": "games/3901410772/resources.zip",
+        "size": 1766987
+      }
+    },
+    {
+      "id": "364512461",
+      "r2Id": "364512461",
+      "rank": 71,
+      "name": "恐龙快打 加强版",
+      "shortName": "恐龙快打 加强版",
+      "platform": "街机",
+      "package": "dinoh",
+      "tags": [
+        "街机",
+        "格斗",
+        "改版"
+      ],
+      "players": 15774,
+      "score": 8.9,
+      "releaseDate": "2026-10-15",
+      "desc": "《恐龙快打 加强版》是 街机 平台的格斗作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/364512461/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/dinoh",
+        "romPath": "/dinoh/dinoh.zip",
+        "statePath": "/dinoh/adventure.state",
+        "romUrl": "games/364512461/rom.zip",
+        "resourcesUrl": "games/364512461/resources.zip",
+        "size": 4725816
+      }
+    },
+    {
+      "id": "3611889235",
+      "r2Id": "3611889235",
+      "rank": 72,
+      "name": "摔角霸王",
+      "shortName": "摔角霸王",
+      "platform": "街机",
+      "package": "slammast",
+      "tags": [
+        "街机",
+        "体育",
+        "怀旧"
+      ],
+      "players": 15457,
+      "score": 8.5,
+      "releaseDate": "2026-10-15",
+      "desc": "《摔角霸王》是 街机 平台的体育作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3611889235/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/slammast",
+        "romPath": "/slammast/slammast.zip",
+        "statePath": "/slammast/adventure.state",
+        "romUrl": "games/3611889235/rom.zip",
+        "resourcesUrl": "games/3611889235/resources.zip",
+        "size": 6590182
+      }
+    },
+    {
+      "id": "3599007110",
+      "r2Id": "3599007110",
+      "rank": 73,
+      "name": "双截龙2",
+      "shortName": "双截龙2",
+      "platform": "FC",
+      "package": "sjl2",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 15145,
+      "score": 9.5,
+      "releaseDate": "2026-10-13",
+      "desc": "《双截龙2》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3599007110/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/sjl2",
+        "romPath": "/sjl2/sjl2.zip",
+        "statePath": "/sjl2/adventure.state",
+        "romUrl": "games/3599007110/rom.zip",
+        "resourcesUrl": "games/3599007110/resources.zip",
+        "size": 148876
+      }
+    },
+    {
+      "id": "3529667603",
+      "r2Id": "3529667603",
+      "rank": 74,
+      "name": "三国战纪 战神传说",
+      "shortName": "三国战纪 战神传说",
+      "platform": "街机",
+      "package": "kovshzs",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 14721,
+      "score": 9.1,
+      "releaseDate": "2026-10-13",
+      "desc": "《三国战纪 战神传说》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3529667603/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovshzs",
+        "romPath": "/kovshzs/kovshzs.zip",
+        "statePath": "/kovshzs/adventure.state",
+        "romUrl": "games/3529667603/rom.zip",
+        "resourcesUrl": "games/3529667603/resources.zip",
+        "size": 43103724
+      }
+    },
+    {
+      "id": "3404217044",
+      "r2Id": "3404217044",
+      "rank": 75,
+      "name": "忍者棒球",
+      "shortName": "忍者棒球",
+      "platform": "街机",
+      "package": "nbbatman",
+      "tags": [
+        "街机",
+        "体育",
+        "怀旧"
+      ],
+      "players": 14264,
+      "score": 8.6,
+      "releaseDate": "2026-10-13",
+      "desc": "《忍者棒球》是 街机 平台的体育作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3404217044/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/nbbatman",
+        "romPath": "/nbbatman/nbbatman.zip",
+        "statePath": "/nbbatman/adventure.state",
+        "romUrl": "games/3404217044/rom.zip",
+        "resourcesUrl": "games/3404217044/resources.zip",
+        "size": 3668139
+      }
+    },
+    {
+      "id": "3250411041",
+      "r2Id": "3250411041",
+      "rank": 76,
+      "name": "超级玛丽 秘密通道",
+      "shortName": "超级玛丽 秘密通道",
+      "platform": "FC",
+      "package": "cjmlmmtd",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 14020,
+      "score": 9.6,
+      "releaseDate": "2026-10-13",
+      "desc": "《超级玛丽 秘密通道》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3250411041/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/cjmlmmtd",
+        "romPath": "/cjmlmmtd/cjmlmmtd.zip",
+        "statePath": "/cjmlmmtd/adventure.state",
+        "romUrl": "games/3250411041/rom.zip",
+        "resourcesUrl": "games/3250411041/resources.zip",
+        "size": 31388
+      }
+    },
+    {
+      "id": "3201329746",
+      "r2Id": "3201329746",
+      "rank": 77,
+      "name": "火箭车（马路英雄）",
+      "shortName": "火箭车（马路英雄）",
+      "platform": "FC",
+      "package": "hjc",
+      "tags": [
+        "FC",
+        "体育",
+        "怀旧"
+      ],
+      "players": 13698,
+      "score": 9.2,
+      "releaseDate": "2026-10-13",
+      "desc": "《火箭车（马路英雄）》是 FC 平台的体育作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3201329746/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/hjc",
+        "romPath": "/hjc/hjc.zip",
+        "statePath": "/hjc/adventure.state",
+        "romUrl": "games/3201329746/rom.zip",
+        "resourcesUrl": "games/3201329746/resources.zip",
+        "size": 16930
+      }
+    },
+    {
+      "id": "3102935414",
+      "r2Id": "3102935414",
+      "rank": 78,
+      "name": "赤影战士 日版",
+      "shortName": "赤影战士 日版",
+      "platform": "FC",
+      "package": "cyzsrb",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 13149,
+      "score": 8.8,
+      "releaseDate": "2026-10-13",
+      "desc": "《赤影战士 日版》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3102935414/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/cyzsrb",
+        "romPath": "/cyzsrb/cyzsrb.zip",
+        "statePath": "/cyzsrb/adventure.state",
+        "romUrl": "games/3102935414/rom.zip",
+        "resourcesUrl": "games/3102935414/resources.zip",
+        "size": 139671
+      }
+    },
+    {
+      "id": "2941830434",
+      "r2Id": "2941830434",
+      "rank": 79,
+      "name": "松鼠大战2",
+      "shortName": "松鼠大战2",
+      "platform": "FC",
+      "package": "ssdz2",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 12840,
+      "score": 9.7,
+      "releaseDate": "2026-10-13",
+      "desc": "《松鼠大战2》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2941830434/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/ssdz2",
+        "romPath": "/ssdz2/ssdz2.zip",
+        "statePath": "/ssdz2/adventure.state",
+        "romUrl": "games/2941830434/rom.zip",
+        "resourcesUrl": "games/2941830434/resources.zip",
+        "size": 135565
+      }
+    },
+    {
+      "id": "2895205432",
+      "r2Id": "2895205432",
+      "rank": 80,
+      "name": "三国战纪 傲世三国",
+      "shortName": "三国战纪 傲世三国",
+      "platform": "街机",
+      "package": "kovshxas",
+      "tags": [
+        "街机",
+        "策略",
+        "怀旧"
+      ],
+      "players": 12560,
+      "score": 9.3,
+      "releaseDate": "2026-10-13",
+      "desc": "《三国战纪 傲世三国》是 街机 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2895205432/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/kovshxas",
+        "romPath": "/kovshxas/kovshxas.zip",
+        "statePath": "/kovshxas/adventure.state",
+        "romUrl": "games/2895205432/rom.zip",
+        "resourcesUrl": "games/2895205432/resources.zip",
+        "size": 22750554
+      }
+    },
+    {
+      "id": "2800650505",
+      "r2Id": "2800650505",
+      "rank": 81,
+      "name": "封神榜",
+      "shortName": "封神榜",
+      "platform": "FC",
+      "package": "fsb",
+      "tags": [
+        "FC",
+        "经典",
+        "怀旧"
+      ],
+      "players": 12060,
+      "score": 8.9,
+      "releaseDate": "2026-10-11",
+      "desc": "《封神榜》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2800650505/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/fsb",
+        "romPath": "/fsb/fsb.zip",
+        "statePath": "/fsb/adventure.state",
+        "romUrl": "games/2800650505/rom.zip",
+        "resourcesUrl": "games/2800650505/resources.zip",
+        "size": 422577
+      }
+    },
+    {
+      "id": "279316473",
+      "r2Id": "279316473",
+      "rank": 82,
+      "name": "口袋妖怪 圣灰 汉化版",
+      "shortName": "口袋妖怪 圣灰 汉化版",
+      "platform": "GBA",
+      "package": "kdygsh",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "改版"
+      ],
+      "players": 11819,
+      "score": 8.5,
+      "releaseDate": "2026-10-11",
+      "desc": "《口袋妖怪 圣灰 汉化版》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/279316473/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygsh",
+        "romPath": "/kdygsh/kdygsh.zip",
+        "statePath": "/kdygsh/adventure.state",
+        "romUrl": "games/279316473/rom.zip",
+        "resourcesUrl": "games/279316473/resources.zip",
+        "size": 6176550
+      }
+    },
+    {
+      "id": "273215008",
+      "r2Id": "273215008",
+      "rank": 83,
+      "name": "街头霸王6 十二人",
+      "shortName": "街头霸王6 十二人",
+      "platform": "FC",
+      "package": "jtbw6ser",
+      "tags": [
+        "FC",
+        "经典",
+        "怀旧"
+      ],
+      "players": 11471,
+      "score": 9.4,
+      "releaseDate": "2026-10-11",
+      "desc": "《街头霸王6 十二人》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/273215008/cover.jpg",
+      "coverExt": "jpg",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": false,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/jtbw6ser",
+        "romPath": "/jtbw6ser/jtbw6ser.zip",
+        "statePath": "/jtbw6ser/adventure.state",
+        "romUrl": "games/273215008/rom.zip",
+        "resourcesUrl": "",
+        "size": 111120
+      }
+    },
+    {
+      "id": "2178284194",
+      "r2Id": "2178284194",
+      "rank": 84,
+      "name": "口袋妖怪 神兽领域1.5",
+      "shortName": "口袋妖怪 神兽领域1.5",
+      "platform": "GBA",
+      "package": "kdygssly",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 11083,
+      "score": 9,
+      "releaseDate": "2026-10-11",
+      "desc": "《口袋妖怪 神兽领域1.5》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/2178284194/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygssly",
+        "romPath": "/kdygssly/kdygssly.zip",
+        "statePath": "/kdygssly/adventure.state",
+        "romUrl": "games/2178284194/rom.zip",
+        "resourcesUrl": "games/2178284194/resources.zip",
+        "size": 7193043
+      }
+    },
+    {
+      "id": "1835287026",
+      "r2Id": "1835287026",
+      "rank": 85,
+      "name": "X战警",
+      "shortName": "X战警",
+      "platform": "街机",
+      "package": "xmen",
+      "tags": [
+        "街机",
+        "经典",
+        "怀旧"
+      ],
+      "players": 10714,
+      "score": 8.6,
+      "releaseDate": "2026-10-11",
+      "desc": "《X战警》是 街机 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1835287026/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/xmen",
+        "romPath": "/xmen/xmen.zip",
+        "statePath": "/xmen/adventure.state",
+        "romUrl": "games/1835287026/rom.zip",
+        "resourcesUrl": "games/1835287026/resources.zip",
+        "size": 4244607
+      }
+    },
+    {
+      "id": "1042657924",
+      "r2Id": "1042657924",
+      "rank": 86,
+      "name": "玛丽医生",
+      "shortName": "玛丽医生",
+      "platform": "FC",
+      "package": "mlys",
+      "tags": [
+        "FC",
+        "益智",
+        "怀旧"
+      ],
+      "players": 10338,
+      "score": 9.6,
+      "releaseDate": "2026-10-11",
+      "desc": "《玛丽医生》是 FC 平台的益智作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/1042657924/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/mlys",
+        "romPath": "/mlys/mlys.zip",
+        "statePath": "/mlys/adventure.state",
+        "romUrl": "games/1042657924/rom.zip",
+        "resourcesUrl": "games/1042657924/resources.zip",
+        "size": 30159
+      }
+    },
+    {
+      "id": "953805076",
+      "r2Id": "953805076",
+      "rank": 87,
+      "name": "魂斗罗2 最强boss",
+      "shortName": "魂斗罗2 最强boss",
+      "platform": "FC",
+      "package": "hdl2zqb",
+      "tags": [
+        "FC",
+        "射击",
+        "怀旧"
+      ],
+      "players": 9853,
+      "score": 9.1,
+      "releaseDate": "2026-10-11",
+      "desc": "《魂斗罗2 最强boss》是 FC 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/953805076/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": false,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/hdl2zqb",
+        "romPath": "/hdl2zqb/hdl2zqb.zip",
+        "statePath": "/hdl2zqb/adventure.state",
+        "romUrl": "games/953805076/rom.zip",
+        "resourcesUrl": "",
+        "size": 149042
+      }
+    },
+    {
+      "id": "948575402",
+      "r2Id": "948575402",
+      "rank": 88,
+      "name": "冒险岛",
+      "shortName": "冒险岛",
+      "platform": "FC",
+      "package": "mxd1",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 9444,
+      "score": 8.7,
+      "releaseDate": "2026-10-11",
+      "desc": "《冒险岛》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/948575402/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/mxd1",
+        "romPath": "/mxd1/mxd1.zip",
+        "statePath": "/mxd1/adventure.state",
+        "romUrl": "games/948575402/rom.zip",
+        "resourcesUrl": "games/948575402/resources.zip",
+        "size": 39929
+      }
+    },
+    {
+      "id": "718639626",
+      "r2Id": "718639626",
+      "rank": 89,
+      "name": "口袋妖怪 逃向蓝天1.5",
+      "shortName": "口袋妖怪 逃向蓝天1.5",
+      "platform": "GBA",
+      "package": "kdygtxlt",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "怀旧"
+      ],
+      "players": 9071,
+      "score": 9.7,
+      "releaseDate": "2026-10-09",
+      "desc": "《口袋妖怪 逃向蓝天1.5》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/718639626/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/kdygtxlt",
+        "romPath": "/kdygtxlt/kdygtxlt.zip",
+        "statePath": "/kdygtxlt/adventure.state",
+        "romUrl": "games/718639626/rom.zip",
+        "resourcesUrl": "games/718639626/resources.zip",
+        "size": 5655854
+      }
+    },
+    {
+      "id": "678044852",
+      "r2Id": "678044852",
+      "rank": 90,
+      "name": "三十六计",
+      "shortName": "三十六计",
+      "platform": "FC",
+      "package": "sslj",
+      "tags": [
+        "FC",
+        "经典",
+        "怀旧"
+      ],
+      "players": 8850,
+      "score": 9.3,
+      "releaseDate": "2026-10-09",
+      "desc": "《三十六计》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/678044852/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/sslj",
+        "romPath": "/sslj/sslj.zip",
+        "statePath": "/sslj/adventure.state",
+        "romUrl": "games/678044852/rom.zip",
+        "resourcesUrl": "games/678044852/resources.zip",
+        "size": 190259
+      }
+    },
+    {
+      "id": "660270848",
+      "r2Id": "660270848",
+      "rank": 91,
+      "name": "特库摩世界杯足球赛 汉化版",
+      "shortName": "特库摩世界杯足球赛 汉化版",
+      "platform": "FC",
+      "package": "tkmsjbzqshhb",
+      "tags": [
+        "FC",
+        "体育",
+        "改版"
+      ],
+      "players": 8483,
+      "score": 8.8,
+      "releaseDate": "2026-10-09",
+      "desc": "《特库摩世界杯足球赛 汉化版》是 FC 平台的体育作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/660270848/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/tkmsjbzqshhb",
+        "romPath": "/tkmsjbzqshhb/tkmsjbzqshhb.zip",
+        "statePath": "/tkmsjbzqshhb/adventure.state",
+        "romUrl": "games/660270848/rom.zip",
+        "resourcesUrl": "games/660270848/resources.zip",
+        "size": 49510
+      }
+    },
+    {
+      "id": "489783855",
+      "r2Id": "489783855",
+      "rank": 92,
+      "name": "打击者1945",
+      "shortName": "打击者1945",
+      "platform": "街机",
+      "package": "s1945",
+      "tags": [
+        "街机",
+        "射击",
+        "怀旧"
+      ],
+      "players": 8065,
+      "score": 9.8,
+      "releaseDate": "2026-10-09",
+      "desc": "《打击者1945》是 街机 平台的射击作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/489783855/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FBA_V2",
+        "gameType": 31,
+        "plugin": "FBA",
+        "rootPath": "/s1945",
+        "romPath": "/s1945/s1945.zip",
+        "statePath": "/s1945/adventure.state",
+        "romUrl": "games/489783855/rom.zip",
+        "resourcesUrl": "games/489783855/resources.zip",
+        "size": 5457133
+      }
+    },
+    {
+      "id": "485480531",
+      "r2Id": "485480531",
+      "rank": 93,
+      "name": "圣火徽章外传 索菲亚的复苏 修复版",
+      "shortName": "圣火徽章外传 索菲亚的复苏 修复版",
+      "platform": "FC",
+      "package": "shhzwzsfydfc",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 7716,
+      "score": 9.4,
+      "releaseDate": "2026-10-09",
+      "desc": "《圣火徽章外传 索菲亚的复苏 修复版》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/485480531/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/shhzwzsfydfc",
+        "romPath": "/shhzwzsfydfc/shhzwzsfydfc.zip",
+        "statePath": "/shhzwzsfydfc/adventure.state",
+        "romUrl": "games/485480531/rom.zip",
+        "resourcesUrl": "games/485480531/resources.zip",
+        "size": 308237
+      }
+    },
+    {
+      "id": "474504294",
+      "r2Id": "474504294",
+      "rank": 94,
+      "name": "三国志 群雄起源v1.5up6",
+      "shortName": "三国志 群雄起源v1.5up6",
+      "platform": "FC",
+      "package": "qxqyv1.5up5qxqy19",
+      "tags": [
+        "FC",
+        "策略",
+        "怀旧"
+      ],
+      "players": 7329,
+      "score": 8.9,
+      "releaseDate": "2026-10-09",
+      "desc": "《三国志 群雄起源v1.5up6》是 FC 平台的策略作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/474504294/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "neon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/qxqyv1.5up5qxqy19",
+        "romPath": "/qxqyv1.5up5qxqy19/qxqyv1.5up5qxqy19.zip",
+        "statePath": "/qxqyv1.5up5qxqy19/adventure.state",
+        "romUrl": "games/474504294/rom.zip",
+        "resourcesUrl": "games/474504294/resources.zip",
+        "size": 290864
+      }
+    },
+    {
+      "id": "4153024296",
+      "r2Id": "4153024296",
+      "rank": 95,
+      "name": "古巴战士 人物无敌版",
+      "shortName": "古巴战士 人物无敌版",
+      "platform": "FC",
+      "package": "gbzsbsprwwdb",
+      "tags": [
+        "FC",
+        "经典",
+        "改版"
+      ],
+      "players": 6977,
+      "score": 8.5,
+      "releaseDate": "2026-10-09",
+      "desc": "《古巴战士 人物无敌版》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4153024296/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "space"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/gbzsbsprwwdb",
+        "romPath": "/gbzsbsprwwdb/gbzsbsprwwdb.zip",
+        "statePath": "/gbzsbsprwwdb/adventure.state",
+        "romUrl": "games/4153024296/rom.zip",
+        "resourcesUrl": "games/4153024296/resources.zip",
+        "size": 125208
+      }
+    },
+    {
+      "id": "4032481919",
+      "r2Id": "4032481919",
+      "rank": 96,
+      "name": "口袋妖怪 特别篇赤15.4 最终汉化版",
+      "shortName": "口袋妖怪 特别篇赤15.4 最终汉…",
+      "platform": "GBA",
+      "package": "tbpc154",
+      "tags": [
+        "GBA",
+        "角色扮演",
+        "改版"
+      ],
+      "players": 6631,
+      "score": 9.5,
+      "releaseDate": "2026-10-09",
+      "desc": "《口袋妖怪 特别篇赤15.4 最终汉化版》是 GBA 平台的角色扮演作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4032481919/cover.png",
+      "coverExt": "png",
+      "coverTone": 1,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "forest"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "sunset"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "dungeon"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "VBA",
+        "gameType": 33,
+        "plugin": "VBA",
+        "rootPath": "/tbpc154",
+        "romPath": "/tbpc154/tbpc154.zip",
+        "statePath": "/tbpc154/adventure.state",
+        "romUrl": "games/4032481919/rom.zip",
+        "resourcesUrl": "games/4032481919/resources.zip",
+        "size": 14063885
+      }
+    },
+    {
+      "id": "4031903276",
+      "r2Id": "4031903276",
+      "rank": 97,
+      "name": "假面骑士Black",
+      "shortName": "假面骑士Black",
+      "platform": "FC",
+      "package": "jmcrb",
+      "tags": [
+        "FC",
+        "经典",
+        "怀旧"
+      ],
+      "players": 6180,
+      "score": 9.1,
+      "releaseDate": "2026-10-07",
+      "desc": "《假面骑士Black》是 FC 平台的经典作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/4031903276/cover.png",
+      "coverExt": "png",
+      "coverTone": 2,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "city"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "snow"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "space"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/jmcrb",
+        "romPath": "/jmcrb/jmcrb.zip",
+        "statePath": "/jmcrb/adventure.state",
+        "romUrl": "games/4031903276/rom.zip",
+        "resourcesUrl": "games/4031903276/resources.zip",
+        "size": 61136
+      }
+    },
+    {
+      "id": "3770464094",
+      "r2Id": "3770464094",
+      "rank": 98,
+      "name": "越野摩托车",
+      "shortName": "越野摩托车",
+      "platform": "FC",
+      "package": "yymtc",
+      "tags": [
+        "FC",
+        "体育",
+        "怀旧"
+      ],
+      "players": 5756,
+      "score": 8.6,
+      "releaseDate": "2026-10-07",
+      "desc": "《越野摩托车》是 FC 平台的体育作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/3770464094/cover.png",
+      "coverExt": "png",
+      "coverTone": 3,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "dungeon"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "neon"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "forest"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/yymtc",
+        "romPath": "/yymtc/yymtc.zip",
+        "statePath": "/yymtc/adventure.state",
+        "romUrl": "games/3770464094/rom.zip",
+        "resourcesUrl": "games/3770464094/resources.zip",
+        "size": 18252
+      }
+    },
+    {
+      "id": "376019615",
+      "r2Id": "376019615",
+      "rank": 99,
+      "name": "超级玛丽 生人勿近",
+      "shortName": "超级玛丽 生人勿近",
+      "platform": "FC",
+      "package": "cjmlsrwj",
+      "tags": [
+        "FC",
+        "闯关",
+        "怀旧"
+      ],
+      "players": 5472,
+      "score": 9.6,
+      "releaseDate": "2026-10-07",
+      "desc": "《超级玛丽 生人勿近》是 FC 平台的闯关作品，支持浏览器直接游玩。内置即时存档、按键自定义与金手指选项，打开就能找回当年的手感。",
+      "cover": "games/376019615/cover.png",
+      "coverExt": "png",
+      "coverTone": 4,
+      "screenshots": [
+        {
+          "label": "游戏画面",
+          "tone": "sky"
+        },
+        {
+          "label": "经典关卡",
+          "tone": "city"
+        },
+        {
+          "label": "挑战时刻",
+          "tone": "sunset"
+        }
+      ],
+      "playable": true,
+      "hasResources": true,
+      "core": {
+        "gameMode": "FC",
+        "gameType": 35,
+        "plugin": "FC",
+        "rootPath": "/cjmlsrwj",
+        "romPath": "/cjmlsrwj/cjmlsrwj.zip",
+        "statePath": "/cjmlsrwj/adventure.state",
+        "romUrl": "games/376019615/rom.zip",
+        "resourcesUrl": "games/376019615/resources.zip",
+        "size": 31365
+      }
     }
   ]
 }

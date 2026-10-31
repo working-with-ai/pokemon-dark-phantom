@@ -24,7 +24,9 @@ const ICON_PATHS = {
   gba: '<rect x="3" y="5.5" width="26" height="21" rx="5"/><rect x="8" y="9.5" width="16" height="10" rx="1.5"/><path d="M7 18.5h4M9 16.5v4"/><circle cx="23.5" cy="17.5" r="1.5"/><circle cx="26" cy="20" r="1.5"/>',
   question: '<circle cx="12" cy="12" r="8.4"/><path d="M9.8 9.2c.3-1.4 1.5-2.2 3-2 1.4.2 2.3 1.4 2.1 2.8-.2 1.5-1.8 1.8-2.5 2.8-.4.6-.4 1.2-.4 1.7"/><circle cx="12" cy="17.2" r=".8" fill="currentColor" stroke="none"/>',
   trash: '<path d="M5 7h14M9.5 7V5h5v2M7.5 7l.8 12.5h7.4L16.5 7M10.5 10v6.5M13.5 10v6.5"/>',
-  check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>'
+  check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+  spark: '<path d="m12 3 2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/><path d="M18.5 3.5v3M17 5h3"/>',
+  keyboard: '<rect x="3" y="6" width="18" height="12" rx="2.2"/><path d="M6.5 9.5h.1M9.5 9.5h.1M12.5 9.5h.1M15.5 9.5h.1M18 9.5h.1M6.5 13h.1M9.5 13h.1M12.5 13h.1M15.5 13h.1M18 13h.1M8 16.5h8"/>'
 };
 
 export function icon(name, className = '') {
@@ -71,12 +73,16 @@ export function tagMarkup(tags, limit = 4) {
 export function coverMarkup(game, { variant = 'card' } = {}) {
   const platform = game.platform === '街机' ? 'arcade' : game.platform === 'FC' ? 'fc' : 'gba';
   const tone = Number(game.coverTone) || 1;
+  const cover = game.cover
+    ? `<img class="cover-img" src="${escapeHtml(game.cover)}" alt="" loading="${variant === 'hero' ? 'eager' : 'lazy'}" onerror="this.remove()">`
+    : '';
   return `<div class="game-cover cover-${variant} platform-${platform} tone-${tone}" aria-hidden="true">
     <span class="cover-grid"></span>
     <span class="cover-glow"></span>
     <span class="cover-platform">${escapeHtml(game.platform)}</span>
     <span class="cover-char">${escapeHtml(firstCharacter(game.name))}</span>
-    <span class="cover-stamp">${game.playable ? 'PLAY' : 'SOON'}</span>
+    ${cover}
+    ${game.cover ? '' : `<span class="cover-stamp">${game.playable ? 'PLAY' : 'SOON'}</span>`}
   </div>`;
 }
 

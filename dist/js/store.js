@@ -101,11 +101,20 @@ export function clearSearchHistory() {
 }
 
 export function getSaveSlots(gameId) {
+  return getAllSaveSlots().filter(slot => slot.gameId === gameId);
+}
+
+export function getAllSaveSlots() {
   const slots = readJSON(SAVES_KEY, []);
   if (!Array.isArray(slots)) return [];
   return slots
-    .filter(slot => slot && slot.gameId === gameId)
+    .filter(slot => slot && slot.gameId && slot.id)
     .sort((a, b) => (Number(b.createdAt) || 0) - (Number(a.createdAt) || 0));
+}
+
+export function removeSaveSlot(gameId, slotId) {
+  const slots = getAllSaveSlots().filter(slot => !(slot.gameId === gameId && slot.id === slotId));
+  writeJSON(SAVES_KEY, slots);
 }
 
 export function addSaveSlot(slot) {

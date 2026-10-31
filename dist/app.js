@@ -128,8 +128,11 @@ function setupGlobalClicks() {
       const game = data?.gamesById.get(launch.dataset.launch);
       if (!game) return;
       if (game.playable) {
-        const slot = launch.dataset.slot ? `&slot=${encodeURIComponent(launch.dataset.slot)}` : '';
-        navigate(`/play?id=${encodeURIComponent(game.id)}${slot}`);
+        const params = new URLSearchParams({ id: game.id });
+        if (launch.dataset.slot) params.set('slot', launch.dataset.slot);
+        if (launch.dataset.stage) params.set('stage', launch.dataset.stage);
+        if (launch.dataset.cloud) params.set('cloud', launch.dataset.cloud);
+        navigate(`/play?${params}`);
       } else {
         toast('即将上线，敬请期待');
       }

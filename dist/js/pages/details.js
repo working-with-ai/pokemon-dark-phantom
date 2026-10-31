@@ -1,4 +1,6 @@
 import { formatPlayTime, formatRelativeTime, getSaveSlots } from '../store.js';
+import { getSyncCode, listCloudSaves } from '../cloud.js';
+import { loadResourcesInfo } from '../resources.js';
 import { coverMarkup, emptyState, escapeHtml, formatPlayers, icon } from '../ui.js';
 
 function screenshotArt(game, shot, index) {
@@ -7,11 +9,11 @@ function screenshotArt(game, shot, index) {
     <span class="shot-hills"></span>
     <span class="shot-ghost">${escapeHtml((game.shortName || game.name).slice(0, 1))}</span>
     <span class="shot-scan"></span>
-    <span class="shot-label">${escapeHtml(shot.label || '游戏截图')}</span>
+    <span class="shot-label">${escapeHtml(shot.label || '游戏画面')}</span>
   </div>`;
 }
 
-function mediaChrome(game) {
+function mediaChrome() {
   return `<span class="shot-center">${icon('play')}</span>
     <span class="shot-controls">
       <span class="shot-progress"><i></i></span>
@@ -22,23 +24,65 @@ function mediaChrome(game) {
     </span>`;
 }
 
-function saveRows(game) {
-  const slots = getSaveSlots(game.id);
-  if (!slots.length) {
-    return emptyState(
-      game.playable ? '还没有本地存档' : '游戏上线后即可存档',
-      game.playable ? '进入游戏后点击「存档」，进度会显示在这里' : '当前为占位条目'
-    );
-  }
-  return `<div class="save-list">${slots.slice(0, 4).map(slot => `<article class="save-row">
+function cloudBadge() {
+  return '<span class="cloud-badge">云</span>';
+}
+
+function saveRow(game, slot, cloudBySlot) {
+  const isCloud = cloudBySlot?.has(slot.id);
+  return `<article class="save-row ${isCloud ? 'is-cloud' : ''}">
     <a class="card-hit" href="#/play?id=${encodeURIComponent(game.id)}&amp;slot=${encodeURIComponent(slot.id)}" aria-label="继续 ${escapeHtml(slot.label)}"></a>
     ${coverMarkup(game, { variant: 'save' })}
     <div class="save-info">
-      <h3>${escapeHtml(slot.label || '即时存档')}</h3>
+      <h3>${escapeHtml(slot.label || '即时存档')}${isCloud ? cloudBadge() : ''}</h3>
       <p>${formatRelativeTime(slot.createdAt)} · 游玩 ${formatPlayTime(slot.seconds)}</p>
     </div>
     <button class="launch-btn save-go" type="button" data-launch="${escapeHtml(game.id)}" data-slot="${escapeHtml(slot.id)}">去玩</button>
-  </article>`).join('')}</div>`;
+  </article>`;
+}
+
+function stageRow(game, stage, imageUrl) {
+  const thumb = imageUrl
+    ? `<span class="stage-thumb"><img src="${imageUrl}" alt="${escapeHtml(stage.label)}" loading="lazy"></span>`
+    : coverMarkup(game, { variant: 'save' });
+  return `<article class="save-row stage-row">
+    <a class="card-hit" href="#/play?id=${encodeURIComponent(game.id)}&amp;stage=${encodeURIComponent(stage.id)}" aria-label="进入${escapeHtml(stage.label)}"></a>
+    ${thumb}
+    <div class="save-info">
+      <h3>${escapeHtml(stage.label)}</h3>
+      <p>预置关卡 · 点击直接进入</p>
+    </div>
+    <button class="launch-btn save-go" type="button" data-launch="${escapeHtml(game.id)}" data-stage="${escapeHtml(stage.id)}">去玩</button>
+  </article>`;
+}
+
+function cloudRow(game, save) {
+  return `<article class="save-row is-cloud">
+    <a class="card-hit" href="#/play?id=${encodeURIComponent(game.id)}&amp;cloud=${encodeURIComponent(save.slotId)}" aria-label="读取云端 ${escapeHtml(save.label)}"></a>
+    ${coverMarkup(game, { variant: 'save' })}
+    <div class="save-info">
+      <h3>${escapeHtml(save.label || '云端存档')}${cloudBadge()}</h3>
+      <p>${formatRelativeTime(save.createdAt)} · 游玩 ${formatPlayTime(save.seconds)}</p>
+    </div>
+    <button class="launch-btn save-go" type="button" data-launch="${escapeHtml(game.id)}" data-cloud="${escapeHtml(save.slotId)}">去玩</button>
+  </article>`;
+}
+
+function saveRows(game, { stages, local, cloud, loading, imageUrls }) {
+  const cloudBySlot = new Set(cloud.map(save => save.slotId));
+  const localIds = new Set(local.map(slot => slot.id));
+  const cloudOnly = cloud.filter(save => !localIds.has(save.slotId));
+  const rows = [
+    ...stages.map(stage => stageRow(game, stage, imageUrls.get(stage.id))),
+    ...local.map(slot => saveRow(game, slot, cloudBySlot)),
+    ...cloudOnly.map(save => cloudRow(game, save))
+  ];
+  if (!rows.length) {
+    return loading
+      ? '<p class="save-loading">正在读取关卡与云端存档…</p>'
+      : emptyState('还没有存档', '进入游戏后点击「存档」，进度会显示在这里');
+  }
+  return `${rows.join('')}${loading ? '<p class="save-loading">正在读取关卡与云端存档…</p>' : ''}`;
 }
 
 function notFound() {
@@ -62,10 +106,11 @@ export function render({ data, query }) {
   document.title = `${game.shortName || game.name} · 一局童年`;
   const shots = (game.screenshots && game.screenshots.length ? game.screenshots : [
     { label: '游戏画面', tone: 'forest' },
-    { label: '冒险途中', tone: 'city' },
+    { label: '经典关卡', tone: 'city' },
     { label: '挑战时刻', tone: 'dungeon' }
   ]).slice(0, 3);
   const available = Boolean(game.playable && game.core);
+  const local = getSaveSlots(game.id);
 
   const el = document.createElement('div');
   el.className = `page page-details ${available ? 'is-playable' : 'is-coming'}`;
@@ -90,7 +135,7 @@ export function render({ data, query }) {
       ${shots.map((shot, index) => `<figure class="shot-slide">
         ${screenshotArt(game, shot, index)}
         <button class="shot-hit" type="button" data-launch="${escapeHtml(game.id)}" aria-label="${available ? '启动游戏' : '游戏即将上线'}"></button>
-        ${mediaChrome(game)}
+        ${mediaChrome()}
       </figure>`).join('')}
     </div>
     <section class="detail-copy">
@@ -102,9 +147,9 @@ export function render({ data, query }) {
     <section class="cloud-save">
       <div class="cloud-head">
         <h2>云存档</h2>
-        <span>保存在本机浏览器</span>
+        <span>预置关卡 · 本地 · 云端</span>
       </div>
-      ${saveRows(game)}
+      <div id="save-area">${saveRows(game, { stages: [], local, cloud: [], loading: true, imageUrls: new Map() })}</div>
     </section>
   </main>
   <div class="detail-bottom-bar">
@@ -117,6 +162,7 @@ export function render({ data, query }) {
     el,
     mount() {
       const nav = el.querySelector('.detail-nav');
+      const area = el.querySelector('#save-area');
       const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 112);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
@@ -129,9 +175,55 @@ export function render({ data, query }) {
       };
       toggle.addEventListener('click', onToggle);
 
+      let destroyed = false;
+      let imageUrls = new Map();
+      const releaseImages = () => {
+        for (const url of imageUrls.values()) URL.revokeObjectURL(url);
+        imageUrls = new Map();
+      };
+      const paint = (stages, cloud, loading) => {
+        releaseImages();
+        for (const stage of stages) {
+          if (stage.image) {
+            const type = stage.file.endsWith('.png') ? 'image/png' : 'image/jpeg';
+            imageUrls.set(stage.id, URL.createObjectURL(new Blob([stage.image], { type })));
+          }
+        }
+        area.innerHTML = saveRows(game, {
+          stages,
+          local: getSaveSlots(game.id),
+          cloud,
+          loading,
+          imageUrls
+        });
+      };
+
+      (async () => {
+        let stages = [];
+        let cloud = [];
+        try {
+          if (game.core?.resourcesUrl) {
+            const resources = await loadResourcesInfo(game);
+            stages = resources.stages || [];
+          }
+        } catch (error) {
+          console.warn('读取预置关卡失败', error);
+        }
+        try {
+          const code = getSyncCode();
+          if (code) cloud = (await listCloudSaves(code)).filter(save => save.gameId === game.id);
+        } catch (error) {
+          console.warn('读取云端存档失败', error);
+        }
+        if (destroyed) return;
+        paint(stages, cloud, false);
+      })();
+
       return () => {
+        destroyed = true;
         window.removeEventListener('scroll', onScroll);
         toggle.removeEventListener('click', onToggle);
+        releaseImages();
       };
     }
   };

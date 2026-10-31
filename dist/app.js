@@ -1,227 +1,190 @@
-const statusLabel = document.querySelector('#status');
-const shareButton = document.querySelector('#share');
-const startButton = document.querySelector('#start-game');
-const canvas = document.querySelector('#game-canvas');
-const context = canvas.getContext('2d', { alpha: false });
-const rootPath = '/pokemon-dark-phantom-vba';
-const romPath = `${rootPath}/pokemon-dark.gba`;
-const statePath = `${rootPath}/adventure.state`;
-let running = false;
-let paused = false;
-let keyboardKeys = 0;
-let touchKeys = 0;
-let frameTime = 0;
-let image;
+import { back, navigate, restoreScroll, routeKey, saveScroll, startRouter } from './js/router.js';
+import { loadData } from './js/store.js';
+import { toast } from './js/ui.js';
+import { render as renderHome } from './js/pages/home.js';
+import { render as renderDiscover } from './js/pages/discover.js';
+import { render as renderSearch } from './js/pages/search.js';
+import { render as renderMy } from './js/pages/my.js';
+import { render as renderDetails } from './js/pages/details.js';
+import { render as renderList } from './js/pages/list.js';
+import { render as renderPlay } from './js/pages/play.js';
 
-shareButton.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(location.href);
-    shareButton.textContent = '链接已复制 ✓';
-    setTimeout(() => { shareButton.innerHTML = '复制游戏链接 <span aria-hidden="true">↗</span>'; }, 2200);
-  } catch {
-    window.prompt('复制这个链接，分享给朋友：', location.href);
-  }
-});
-
-window.gameInfo = { goldenFingerFiles: '', gameAchievement: '' };
-window.triggerReady = () => {
-  canvas.width = emulib._emuGetVideoWidth();
-  canvas.height = emulib._emuGetVideoHeight();
-  image = context.createImageData(canvas.width, canvas.height);
-  running = true;
-  document.body.dataset.game = 'running';
-  startButton.hidden = true;
-  document.querySelector('#game-toolbar').hidden = false;
-  statusLabel.textContent = '冒险进行中 · VBA';
-  requestAnimationFrame(renderFrame);
+const PAGES = {
+  '/': renderHome,
+  '/discover': renderDiscover,
+  '/search': renderSearch,
+  '/my': renderMy,
+  '/details': renderDetails,
+  '/list': renderList,
+  '/play': renderPlay
 };
+const TAB_ROUTES = new Set(['/', '/discover', '/search', '/my']);
 
-startButton.addEventListener('click', async () => {
-  startButton.disabled = true;
-  startButton.textContent = '正在加载…';
-  statusLabel.textContent = '正在准备模拟器…';
-  window.emuSound = new EMUSound(null);
-  try {
-    window.emulib = await libemu({
-      locateFile: name => new URL(`runtime/${name}`, document.baseURI).href,
-      onAbort: () => { statusLabel.textContent = '模拟器加载失败，请刷新重试'; }
-    });
-    emuSound.emscriptenModule = emulib;
-    emuSound.setVolume(0.5);
-    const database = await new Promise((resolve, reject) => {
-      const request = indexedDB.open(rootPath, 21);
-      request.onupgradeneeded = () => {
-        const store = request.result.createObjectStore('FILE_DATA');
-        store.createIndex('timestamp', 'timestamp', { unique: false });
-      };
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-    const cached = await new Promise((resolve, reject) => {
-      const request = database.transaction('FILE_DATA').objectStore('FILE_DATA').get(romPath);
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error);
-    });
-    if (!cached) {
-      statusLabel.textContent = '正在加载游戏文件 · 约 32 MB';
-      const response = await fetch('roms/pokemon-dark.gba');
-      if (!response.ok) throw new Error(`游戏下载失败：${response.status}`);
-      const contents = new Uint8Array(await response.arrayBuffer());
-      await new Promise((resolve, reject) => {
-        const transaction = database.transaction('FILE_DATA', 'readwrite');
-        transaction.objectStore('FILE_DATA').put({ contents, mode: 33206, timestamp: new Date() }, romPath);
-        transaction.oncomplete = resolve;
-        transaction.onerror = () => reject(transaction.error);
-      });
-    }
-    database.close();
-    statusLabel.textContent = '正在启动 VBA 内核…';
-    emulib.ccall('emuSetJson', null, ['string'], [JSON.stringify({
-      gameType: 33, gameMode: 'VBA', romPath, rootPath, startMode: 0, gameID: 'pokemon-dark-phantom'
-    })]);
-    emulib._emuFast(1);
-  } catch (error) {
-    console.error(error);
-    statusLabel.textContent = `加载失败：${error.message}，请刷新重试`;
-    startButton.textContent = '加载失败，请刷新';
-  }
-});
+const app = document.getElementById('app');
+const tabbar = document.getElementById('tabbar');
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+let data = null;
+let view = null;
+let booted = false;
 
-const keyMap = {
-  ArrowUp: 1, ArrowDown: 2, ArrowLeft: 4, ArrowRight: 8,
-  KeyX: 16, KeyZ: 32, KeyQ: 1024, KeyE: 2048, Enter: 1 << 22, ShiftLeft: 1 << 23, ShiftRight: 1 << 23
-};
-const pressedKeys = new Set();
-for (const type of ['keydown', 'keyup']) {
-  window.addEventListener(type, event => {
-    if (!running || !keyMap[event.code] || /INPUT|SELECT|TEXTAREA/.test(event.target.tagName)) return;
-    event.preventDefault();
-    if (type === 'keydown') pressedKeys.add(event.code);
-    else pressedKeys.delete(event.code);
-    keyboardKeys = [...pressedKeys].reduce((keys, code) => keys | keyMap[code], 0);
-  });
+function bootMarkup() {
+  return `<div class="boot-screen">
+    <div class="boot-logo" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <rect x="5" y="13" width="54" height="38" rx="13" fill="#3c2a1d"/>
+        <rect x="9" y="17" width="46" height="30" rx="10" fill="#6b4a2e"/>
+        <rect x="15" y="23" width="34" height="18" rx="6" fill="#f3ddb7"/>
+        <circle cx="26" cy="30" r="3.4" fill="#3c2a1d"/>
+        <circle cx="38" cy="30" r="3.4" fill="#3c2a1d"/>
+        <path d="M27 36c2 2.6 8 2.6 10 0" fill="none" stroke="#3c2a1d" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="14" cy="20" r="2.2" fill="#f0b35a"/>
+        <circle cx="50" cy="20" r="2.2" fill="#f0b35a"/>
+        <circle cx="14" cy="44" r="2.2" fill="#f0b35a"/>
+        <circle cx="50" cy="44" r="2.2" fill="#f0b35a"/>
+      </svg>
+    </div>
+    <strong>一局童年</strong>
+    <span>RETRO ARCADE</span>
+    <i class="boot-spinner"></i>
+  </div>`;
 }
-window.addEventListener('blur', () => {
-  pressedKeys.clear();
-  keyboardKeys = touchKeys = 0;
-});
-for (const button of document.querySelectorAll('[data-key]')) {
-  button.addEventListener('pointerdown', event => {
-    if (!running) return;
-    event.preventDefault();
-    button.setPointerCapture(event.pointerId);
-    touchKeys |= Number(button.dataset.key);
-    button.classList.add('pressed');
-  });
-  for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) {
-    button.addEventListener(type, () => {
-      touchKeys &= ~Number(button.dataset.key);
-      button.classList.remove('pressed');
-    });
+
+function updateTabbar(route) {
+  const visible = TAB_ROUTES.has(route.path);
+  tabbar.hidden = !visible;
+  if (!visible) return;
+  const active = route.path;
+  for (const link of tabbar.querySelectorAll('[data-tab]')) {
+    link.classList.toggle('is-active', link.dataset.tab === active);
+    if (link.dataset.tab === active) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   }
 }
 
-function renderFrame(time) {
-  requestAnimationFrame(renderFrame);
-  if (time - frameTime < 1000 / 65) return;
-  frameTime = time;
-  let keys = keyboardKeys | touchKeys;
-  const pad = [...navigator.getGamepads()].find(Boolean);
-  if (pad) {
-    const mapping = { 0: 16, 1: 32, 4: 1024, 5: 2048, 8: 1 << 23, 9: 1 << 22, 12: 1, 13: 2, 14: 4, 15: 8 };
-    for (const [button, value] of Object.entries(mapping)) if (pad.buttons[button]?.pressed) keys |= value;
-    if (pad.axes[0] < -0.5) keys |= 4;
-    if (pad.axes[0] > 0.5) keys |= 8;
-    if (pad.axes[1] < -0.5) keys |= 1;
-    if (pad.axes[1] > 0.5) keys |= 2;
-  }
-  emulib._emuSetButton(0, keys);
-  emulib._emuUpdate();
-  const pixels = new Uint16Array(emulib.HEAPU8.buffer, emulib._emuGetVideoData(), canvas.width * canvas.height);
-  for (let i = 0; i < pixels.length; i++) {
-    const color = pixels[i];
-    image.data[i * 4] = ((color >> 11) & 31) * 255 / 31;
-    image.data[i * 4 + 1] = ((color >> 5) & 63) * 255 / 63;
-    image.data[i * 4 + 2] = (color & 31) * 255 / 31;
-    image.data[i * 4 + 3] = 255;
-  }
-  context.putImageData(image, 0, 0);
+function updateBody(route) {
+  const page = route.path === '/' ? 'home' : route.path.slice(1);
+  document.body.dataset.page = page;
 }
 
-document.querySelector('#pause').addEventListener('click', event => {
-  paused = !paused;
-  emulib._emuPause(paused ? 1 : 0);
-  event.currentTarget.textContent = paused ? '继续' : '暂停';
-  statusLabel.textContent = paused ? '冒险已暂停' : '冒险进行中 · VBA';
-});
-document.querySelector('#speed').addEventListener('change', event => {
-  emulib._emuFast(Number(event.target.value));
-});
-document.querySelector('#volume').addEventListener('input', event => {
-  emuSound.setVolume(Number(event.target.value));
-});
-function saveState() {
-  emulib.ccall('emuSaveState', null, ['string'], [statePath]);
-  emulib._emuUpdate();
-  const contents = emulib.FS.readFile(statePath);
-  if (!contents.length) throw new Error('存档为空');
-  return contents;
+function renderError(message) {
+  app.innerHTML = `<div class="fatal-screen">
+    <strong>没能打开游戏平台</strong>
+    <p>${message}</p>
+    <button type="button" data-reload>重新加载</button>
+  </div>`;
 }
 
-document.querySelector('#save-state').addEventListener('click', () => {
-  try {
-    saveState();
-    statusLabel.textContent = '即时存档已保存到当前浏览器';
-  } catch (error) {
-    statusLabel.textContent = `存档失败：${error.message}`;
+async function renderRoute(route, previousKey) {
+  const key = routeKey(route);
+  if (previousKey) saveScroll(previousKey);
+  if (view?.destroy) {
+    try { view.destroy(); } catch (error) { console.error(error); }
   }
-});
-document.querySelector('#load-state').addEventListener('click', () => {
-  if (!emulib.FS.analyzePath(statePath).exists) {
-    statusLabel.textContent = '还没有即时存档，请先点击「存档」';
+  view = null;
+
+  const factory = PAGES[route.path];
+  if (!factory) {
+    app.innerHTML = `<div class="fatal-screen">
+      <strong>页面走丢了</strong>
+      <p>这个地址没有对应的页面。</p>
+      <a class="primary-pill" href="#/">回到首页</a>
+    </div>`;
+    tabbar.hidden = true;
+    window.scrollTo(0, 0);
     return;
   }
-  emulib.ccall('emuLoadState', null, ['string'], [statePath]);
-  emulib._emuUpdate();
-  statusLabel.textContent = '已读取即时存档';
-});
-document.querySelector('#export-state').addEventListener('click', () => {
+
   try {
-    const contents = saveState();
-    const url = URL.createObjectURL(new Blob([contents]));
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = '漆黑的魅影-VBA.state';
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    statusLabel.textContent = `即时存档已导出 · ${Math.ceil(contents.length / 1024)} KB`;
+    const result = factory({ data, query: route.query, route });
+    app.replaceChildren(result.el);
+    const cleanup = result.mount ? result.mount() : null;
+    view = {
+      el: result.el,
+      destroy: () => {
+        if (typeof cleanup === 'function') cleanup();
+        if (typeof result.destroy === 'function') result.destroy();
+      }
+    };
   } catch (error) {
-    statusLabel.textContent = `导出失败：${error.message}`;
+    console.error(error);
+    renderError(error.message || '页面渲染失败');
+    tabbar.hidden = true;
+    return;
   }
-});
-document.querySelector('#import-state').addEventListener('change', async event => {
-  const file = event.target.files[0];
-  if (!file) return;
+
+  updateTabbar(route);
+  updateBody(route);
+  requestAnimationFrame(() => restoreScroll(key));
+}
+
+function setupGlobalClicks() {
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+    const launch = event.target.closest('[data-launch]');
+    if (launch) {
+      event.preventDefault();
+      event.stopPropagation();
+      const game = data?.gamesById.get(launch.dataset.launch);
+      if (!game) return;
+      if (game.playable) {
+        const slot = launch.dataset.slot ? `&slot=${encodeURIComponent(launch.dataset.slot)}` : '';
+        navigate(`/play?id=${encodeURIComponent(game.id)}${slot}`);
+      } else {
+        toast('即将上线，敬请期待');
+      }
+      return;
+    }
+
+    const toastButton = event.target.closest('[data-toast]');
+    if (toastButton) {
+      event.preventDefault();
+      event.stopPropagation();
+      toast(toastButton.dataset.toast || '暂未开放');
+      return;
+    }
+
+    const reload = event.target.closest('[data-reload]');
+    if (reload) {
+      window.location.reload();
+      return;
+    }
+
+    const backHome = event.target.closest('[data-back-home]');
+    if (backHome) {
+      event.preventDefault();
+      navigate('/');
+      return;
+    }
+
+    const backButton = event.target.closest('[data-back]');
+    if (backButton) {
+      event.preventDefault();
+      back('/');
+      return;
+    }
+
+    const link = event.target.closest('a[href^="#/"]');
+    if (link) {
+      event.preventDefault();
+      navigate(link.getAttribute('href').slice(1));
+    }
+  });
+}
+
+async function boot() {
+  if (booted) return;
+  booted = true;
+  app.innerHTML = bootMarkup();
+  setupGlobalClicks();
   try {
-    const importedPath = `${rootPath}/imported.state`;
-    emulib.FS.writeFile(importedPath, new Uint8Array(await file.arrayBuffer()));
-    emulib.ccall('emuLoadState', null, ['string'], [importedPath]);
-    emulib._emuUpdate();
-    statusLabel.textContent = '已导入 VBA 即时存档';
+    data = await loadData();
   } catch (error) {
-    statusLabel.textContent = `导入失败：${error.message}`;
+    console.error(error);
+    renderError(error.message || '游戏目录加载失败');
+    return;
   }
-  event.target.value = '';
-});
-document.querySelector('#fullscreen').addEventListener('click', async () => {
-  if (document.fullscreenElement) await document.exitFullscreen();
-  else await document.querySelector('#game-player').requestFullscreen();
-});
-const touchPad = document.querySelector('#touch-pad');
-touchPad.hidden = !matchMedia('(pointer: coarse)').matches;
-document.querySelector('#toggle-touch').setAttribute('aria-pressed', String(!touchPad.hidden));
-document.querySelector('#toggle-touch').addEventListener('click', event => {
-  touchPad.hidden = !touchPad.hidden;
-  event.currentTarget.setAttribute('aria-pressed', String(!touchPad.hidden));
-});
-statusLabel.textContent = '准备就绪 · 点击开始';
+  startRouter(renderRoute);
+}
+
+boot();

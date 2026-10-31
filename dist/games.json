@@ -1,0 +1,584 @@
+{
+  "brand": {
+    "name": "一局童年",
+    "tagline": "把快乐留在这一局",
+    "subtitle": "RETRO ARCADE"
+  },
+  "banners": [
+    {
+      "id": "brand",
+      "title": "一局童年",
+      "subtitle": "经典重启 · 掌上开玩",
+      "kicker": "RETRO ARCADE",
+      "theme": "sun",
+      "art": "pad",
+      "gameId": "pokemon-dark-phantom"
+    },
+    {
+      "id": "pokemon",
+      "title": "漆黑的魅影",
+      "subtitle": "GBA 冒险 · 现已可玩",
+      "kicker": "NOW PLAYING",
+      "theme": "gba",
+      "art": "handheld",
+      "gameId": "pokemon-dark-phantom"
+    },
+    {
+      "id": "arcade",
+      "title": "街机之夜",
+      "subtitle": "像素弹幕 · 一键开战",
+      "kicker": "ARCADE NIGHT",
+      "theme": "night",
+      "art": "ship",
+      "gameId": "space-invader-23"
+    },
+    {
+      "id": "challenge",
+      "title": "速通挑战",
+      "subtitle": "本周精选 · 等你来战",
+      "kicker": "SPEED RUN",
+      "theme": "mint",
+      "art": "flag",
+      "gameId": "pixel-hero-01"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "arcade",
+      "name": "街机",
+      "icon": "arcade",
+      "theme": "arcade"
+    },
+    {
+      "id": "fc",
+      "name": "FC",
+      "icon": "fc",
+      "theme": "fc"
+    },
+    {
+      "id": "gba",
+      "name": "GBA",
+      "icon": "gba",
+      "theme": "gba"
+    }
+  ],
+  "sections": [
+    {
+      "id": "pocket",
+      "name": "口袋热门改版",
+      "subtitle": "经典 IP 的全新冒险",
+      "gameIds": [
+        "pokemon-dark-phantom",
+        "pixel-hero-01",
+        "iron-squad-07",
+        "snow-peak-11",
+        "dungeon-quest-14",
+        "magic-academy-16",
+        "deep-sea-20",
+        "block-knight-22"
+      ]
+    },
+    {
+      "id": "boring",
+      "name": "打发无聊时间",
+      "subtitle": "随开随玩，一局就上头",
+      "gameIds": [
+        "star-patrol-02",
+        "neon-racer-03",
+        "jungle-run-04",
+        "bubble-hunter-06",
+        "gem-puzzle-08",
+        "pinball-land-18",
+        "wild-gunner-19",
+        "pixel-rally-21"
+      ]
+    },
+    {
+      "id": "classic",
+      "name": "经典闯关",
+      "subtitle": "熟悉的像素，新的挑战",
+      "gameIds": [
+        "midnight-drift-05",
+        "street-hoop-09",
+        "mech-defense-10",
+        "thunder-fighter-12",
+        "blood-arena-13",
+        "turbo-drift-15",
+        "boxing-king-17",
+        "forest-story-24"
+      ]
+    }
+  ],
+  "discover": [
+    "pixel-rally-21",
+    "blood-arena-13",
+    "street-hoop-09",
+    "space-invader-23",
+    "magic-academy-16",
+    "neon-racer-03",
+    "pokemon-dark-phantom",
+    "boxing-king-17"
+  ],
+  "games": [
+    {
+      "id": "pokemon-dark-phantom",
+      "name": "口袋妖怪 漆黑的魅影 5.0EX＋BW",
+      "shortName": "漆黑的魅影",
+      "platform": "GBA",
+      "tags": ["GBA", "口袋妖怪", "角色扮演"],
+      "players": 27435,
+      "score": 9.6,
+      "releaseDate": "2026-10-29",
+      "desc": "回到丰缘地区，开启一段熟悉又陌生的冒险。全新剧情、全新地图与更完整的伙伴阵容，在浏览器里重温掌机时代最耐玩的角色扮演体验。支持即时存档，随时接着上次的旅程继续出发。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "冒险开始", "tone": "forest" },
+        { "label": "道馆挑战", "tone": "city" },
+        { "label": "全新剧情", "tone": "dungeon" }
+      ],
+      "playable": true,
+      "core": {
+        "gameType": 33,
+        "gameMode": "VBA",
+        "rootPath": "/pokemon-dark-phantom-vba",
+        "romPath": "/pokemon-dark-phantom-vba/pokemon-dark.gba",
+        "statePath": "/pokemon-dark-phantom-vba/adventure.state",
+        "romUrl": "roms/pokemon-dark.gba",
+        "size": 33554188
+      }
+    },
+    {
+      "id": "pixel-hero-01",
+      "name": "像素勇者 01",
+      "platform": "GBA",
+      "tags": ["GBA", "动作", "冒险"],
+      "players": 7420,
+      "score": 8.8,
+      "releaseDate": "2026-10-29",
+      "desc": "拿起勇者之剑，穿过森林与洞窟，把被夺走的宝石一颗颗找回来。轻快的像素动作冒险，适合随时来上一局。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "勇者出发", "tone": "forest" },
+        { "label": "洞窟深处", "tone": "dungeon" },
+        { "label": "天空之城", "tone": "sky" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "star-patrol-02",
+      "name": "星际巡逻 02",
+      "platform": "FC",
+      "tags": ["FC", "射击", "街机"],
+      "players": 5,
+      "score": 8.2,
+      "releaseDate": "2026-10-29",
+      "desc": "驾驶巡逻舰穿过陨石带，在密集的弹幕中守住最后一颗能源核心。复古纵版射击，节奏紧凑。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "深空巡航", "tone": "space" },
+        { "label": "陨石带", "tone": "sky" },
+        { "label": "母舰决战", "tone": "neon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "neon-racer-03",
+      "name": "霓虹赛车 03",
+      "platform": "街机",
+      "tags": ["街机", "竞速", "一键漂移"],
+      "players": 1980,
+      "score": 8.9,
+      "releaseDate": "2026-10-29",
+      "desc": "夜色、霓虹与引擎声。一键漂移穿过城市高架，在倒计时结束前冲过终点线。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "午夜起跑", "tone": "neon" },
+        { "label": "高架追逐", "tone": "city" },
+        { "label": "终点冲刺", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "jungle-run-04",
+      "name": "丛林探险 04",
+      "platform": "GBA",
+      "tags": ["GBA", "冒险", "收集"],
+      "players": 41,
+      "score": 8.5,
+      "releaseDate": "2026-10-17",
+      "desc": "藤蔓、遗迹和会说话的鹦鹉。带上地图深入丛林，寻找传说中失落的金色果实。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "雨林入口", "tone": "forest" },
+        { "label": "古代遗迹", "tone": "dungeon" },
+        { "label": "树冠之上", "tone": "sky" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "midnight-drift-05",
+      "name": "午夜漂移 05",
+      "platform": "街机",
+      "tags": ["街机", "竞速", "漂移"],
+      "players": 105,
+      "score": 9.0,
+      "releaseDate": "2026-10-16",
+      "desc": "没有终点，只有下一段弯道。掌握漂移节奏，在霓虹赛道上刷新自己的最快圈速。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "夜色赛道", "tone": "neon" },
+        { "label": "连续发卡弯", "tone": "city" },
+        { "label": "最后一圈", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "bubble-hunter-06",
+      "name": "泡泡猎人 06",
+      "platform": "FC",
+      "tags": ["FC", "休闲", "益智"],
+      "players": 138,
+      "score": 8.1,
+      "releaseDate": "2026-10-16",
+      "desc": "把同色泡泡连在一起，一口气消掉整片屏幕。简单规则，停不下来的连锁爽感。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "泡泡工坊", "tone": "sky" },
+        { "label": "连锁消除", "tone": "neon" },
+        { "label": "无尽模式", "tone": "city" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "iron-squad-07",
+      "name": "铁甲战士 07",
+      "platform": "GBA",
+      "tags": ["GBA", "动作", "横版"],
+      "players": 520,
+      "score": 8.7,
+      "releaseDate": "2026-10-10",
+      "desc": "穿上动力装甲，穿过被占领的工业区。三种武器随时切换，用最直接的方式突破防线。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "登陆作战", "tone": "city" },
+        { "label": "工厂突围", "tone": "dungeon" },
+        { "label": "最终防线", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "gem-puzzle-08",
+      "name": "宝石迷阵 08",
+      "platform": "FC",
+      "tags": ["FC", "益智", "休闲"],
+      "players": 340,
+      "score": 8.3,
+      "releaseDate": "2026-10-10",
+      "desc": "交换相邻宝石，凑出三颗同色。看似平静的棋盘，往往藏着惊人的连击。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "宝石矿洞", "tone": "dungeon" },
+        { "label": "连锁反应", "tone": "neon" },
+        { "label": "无尽挑战", "tone": "sky" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "street-hoop-09",
+      "name": "街头篮球 09",
+      "platform": "街机",
+      "tags": ["街机", "体育", "对战"],
+      "players": 863,
+      "score": 8.6,
+      "releaseDate": "2026-10-03",
+      "desc": "三对三街头斗牛，花式运球、空中接力、最后一秒绝杀。把球投进，剩下的交给欢呼。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "街区球场", "tone": "sunset" },
+        { "label": "空中接力", "tone": "city" },
+        { "label": "压哨绝杀", "tone": "neon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "mech-defense-10",
+      "name": "机甲防线 10",
+      "platform": "街机",
+      "tags": ["街机", "策略", "塔防"],
+      "players": 13396,
+      "score": 9.1,
+      "releaseDate": "2026-10-03",
+      "desc": "布置炮台、升级机甲，在潮水般的敌人中守住基地。每一次排兵布阵，都会改变战局。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "基地警报", "tone": "city" },
+        { "label": "机甲出击", "tone": "neon" },
+        { "label": "最后一波", "tone": "dungeon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "snow-peak-11",
+      "name": "雪山攀登 11",
+      "platform": "GBA",
+      "tags": ["GBA", "冒险", "探索"],
+      "players": 2450,
+      "score": 8.4,
+      "releaseDate": "2026-09-28",
+      "desc": "带上绳索和热汤，向山顶出发。风雪会改变路线，也会藏着意料之外的风景。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "山脚营地", "tone": "snow" },
+        { "label": "冰壁攀登", "tone": "sky" },
+        { "label": "云海日出", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "thunder-fighter-12",
+      "name": "雷霆战机 12",
+      "platform": "FC",
+      "tags": ["FC", "射击", "弹幕"],
+      "players": 24288,
+      "score": 9.4,
+      "releaseDate": "2026-09-28",
+      "desc": "经典纵版弹幕射击。收集火力、躲避弹雨，在越来越快的节奏里坚持到最后一关。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "编队起飞", "tone": "space" },
+        { "label": "弹幕来袭", "tone": "neon" },
+        { "label": "终极战机", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "blood-arena-13",
+      "name": "热血格斗 13",
+      "platform": "街机",
+      "tags": ["街机", "格斗", "对战"],
+      "players": 22878,
+      "score": 9.3,
+      "releaseDate": "2026-09-20",
+      "desc": "选一名角色，走上擂台。普通拳脚、必杀连段和读心般的防守，胜负只在毫秒之间。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "擂台开场", "tone": "sunset" },
+        { "label": "连段对决", "tone": "neon" },
+        { "label": "最终回合", "tone": "city" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "dungeon-quest-14",
+      "name": "地牢冒险 14",
+      "platform": "GBA",
+      "tags": ["GBA", "角色扮演", "地牢"],
+      "players": 3973,
+      "score": 8.8,
+      "releaseDate": "2026-09-20",
+      "desc": "火把照亮下一间石室，宝箱旁边总藏着怪物。组建队伍，向地牢更深处进发。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "地牢入口", "tone": "dungeon" },
+        { "label": "宝箱守卫", "tone": "neon" },
+        { "label": "深渊之门", "tone": "city" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "turbo-drift-15",
+      "name": "极速漂移 15",
+      "platform": "街机",
+      "tags": ["街机", "竞速", "一键漂移"],
+      "players": 8665,
+      "score": 8.5,
+      "releaseDate": "2026-09-18",
+      "desc": "改装、加速、漂移。用最短的路线穿过城市，把氮气留给最后的直道。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "车库准备", "tone": "city" },
+        { "label": "隧道加速", "tone": "neon" },
+        { "label": "冲线时刻", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "magic-academy-16",
+      "name": "魔法学院 16",
+      "platform": "GBA",
+      "tags": ["GBA", "角色扮演", "魔法"],
+      "players": 13396,
+      "score": 8.7,
+      "releaseDate": "2026-09-15",
+      "desc": "入学第一天就捡到了一本会说话的法术书。上课、练咒、探索学院，顺便拯救一下世界。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "学院长廊", "tone": "sky" },
+        { "label": "咒语练习", "tone": "neon" },
+        { "label": "禁书区", "tone": "dungeon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "boxing-king-17",
+      "name": "拳王争霸 17",
+      "platform": "FC",
+      "tags": ["FC", "格斗", "运动"],
+      "players": 15058,
+      "score": 8.9,
+      "releaseDate": "2026-09-15",
+      "desc": "戴上手套，登上拳台。观察对手的出拳节奏，在防守反击中拿下金腰带。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "赛前称重", "tone": "city" },
+        { "label": "回合交锋", "tone": "sunset" },
+        { "label": "冠军之夜", "tone": "neon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "pinball-land-18",
+      "name": "弹珠乐园 18",
+      "platform": "FC",
+      "tags": ["FC", "休闲", "弹珠"],
+      "players": 3200,
+      "score": 8.0,
+      "releaseDate": "2026-09-10",
+      "desc": "控制挡板，把弹珠送进高分区域。每一次碰撞都可能触发隐藏奖励。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "乐园开场", "tone": "sunset" },
+        { "label": "连击奖励", "tone": "neon" },
+        { "label": "高分挑战", "tone": "sky" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "wild-gunner-19",
+      "name": "荒野枪手 19",
+      "platform": "街机",
+      "tags": ["街机", "射击", "闯关"],
+      "players": 1200,
+      "score": 8.2,
+      "releaseDate": "2026-09-08",
+      "desc": "风滚草掠过小镇，枪声随时可能响起。拔枪、瞄准、掩护，一路追到边境尽头。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "荒野小镇", "tone": "sunset" },
+        { "label": "酒馆对峙", "tone": "dungeon" },
+        { "label": "边境决战", "tone": "city" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "deep-sea-20",
+      "name": "深海探秘 20",
+      "platform": "GBA",
+      "tags": ["GBA", "探索", "冒险"],
+      "players": 640,
+      "score": 8.6,
+      "releaseDate": "2026-09-05",
+      "desc": "驾驶小型潜艇下潜到光无法抵达的地方。收集样本、记录生物，别让氧气表见底。",
+      "cover": null,
+      "coverTone": 4,
+      "screenshots": [
+        { "label": "海面下潜", "tone": "sky" },
+        { "label": "珊瑚峡谷", "tone": "neon" },
+        { "label": "深海遗迹", "tone": "dungeon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "pixel-rally-21",
+      "name": "像素拉力 21",
+      "platform": "FC",
+      "tags": ["FC", "竞速", "积分赛"],
+      "players": 38820,
+      "score": 9.5,
+      "releaseDate": "2026-09-01",
+      "desc": "沙地、雪原、夜路，一条赛道一种脾气。用最朴素的像素画面，跑出最纯粹的拉力乐趣。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "发车计时", "tone": "sunset" },
+        { "label": "雪地赛段", "tone": "snow" },
+        { "label": "夜路冲刺", "tone": "neon" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "block-knight-22",
+      "name": "方块骑士 22",
+      "platform": "GBA",
+      "tags": ["GBA", "动作", "解谜"],
+      "players": 2050,
+      "score": 8.4,
+      "releaseDate": "2026-08-28",
+      "desc": "把方块推到正确的位置，为骑士打开下一道门。看似简单的机关，越到后面越需要耐心。",
+      "cover": null,
+      "coverTone": 1,
+      "screenshots": [
+        { "label": "城堡入口", "tone": "dungeon" },
+        { "label": "机关回廊", "tone": "city" },
+        { "label": "王座之间", "tone": "sunset" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "space-invader-23",
+      "name": "太空入侵 23",
+      "platform": "街机",
+      "tags": ["街机", "射击", "经典"],
+      "players": 19800,
+      "score": 9.2,
+      "releaseDate": "2026-08-25",
+      "desc": "一排排像素外星人正在逼近。左右移动、寻找空隙、清理整屏，这是属于街机厅的原始快乐。",
+      "cover": null,
+      "coverTone": 3,
+      "screenshots": [
+        { "label": "警报响起", "tone": "space" },
+        { "label": "编队逼近", "tone": "neon" },
+        { "label": "最后防线", "tone": "city" }
+      ],
+      "playable": false
+    },
+    {
+      "id": "forest-story-24",
+      "name": "森林物语 24",
+      "platform": "GBA",
+      "tags": ["GBA", "休闲", "治愈"],
+      "players": 760,
+      "score": 8.3,
+      "releaseDate": "2026-08-20",
+      "desc": "在小木屋旁种一片花，和森林里的邻居聊聊天。没有倒计时，只有慢慢流过的下午。",
+      "cover": null,
+      "coverTone": 2,
+      "screenshots": [
+        { "label": "林间小屋", "tone": "forest" },
+        { "label": "溪边午后", "tone": "sky" },
+        { "label": "萤火之夜", "tone": "neon" }
+      ],
+      "playable": false
+    }
+  ]
+}

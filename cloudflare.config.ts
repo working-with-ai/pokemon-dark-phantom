@@ -3,7 +3,7 @@ import { bindings, defineConfig, triggers } from 'cf/config';
 export default defineConfig({
   accountId: '46bfda57b03f5303659ef8d27f94374a',
   worker: {
-    name: 'pokemon-dark-phantom',
+    name: 'retro-arcade',
     entrypoint: './worker/index.js',
     compatibilityDate: '2026-10-31',
     assets: { runWorkerFirst: ['/roms/*', '/runtime/libvba.wasm'] },
